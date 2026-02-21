@@ -1,0 +1,42 @@
+# Docker artifacts
+*.tar
+*.img
+*.log
+cache/
+tmp/
+
+# Environment files (NEVER commit secrets)
+.conda
+.env
+.env.*
+env/
+
+# Editor/project config
+.vscode/
+.idea/
+*.swp
+*.swo
+.ipynb_checkpoints
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Python (if any containers or scripts use it)
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Node.js (if any container builds use it)
+node_modules/
+dist/
+build/
+
+# Test and diagnostics output
+*.out
+*.err
+coverage/
+
+# Kaggle datasets (but allow submissions)
+*.csv
+!submission.csv

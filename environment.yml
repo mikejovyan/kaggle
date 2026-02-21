@@ -1,0 +1,21 @@
+name: kaggle
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - catboost
+  - ipykernel
+  - kaggle
+  - lightgbm
+  - matplotlib
+  - numpy
+  - optuna
+  - pandas
+  - pip
+  - py-xgboost-cpu
+  - scikit-learn
+  - scikit-learn-intelex
+  - seaborn
+  - pip:
+    - -e .
+    
