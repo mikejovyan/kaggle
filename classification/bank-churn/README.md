@@ -20,6 +20,8 @@ kaggle competitions download -c playground-series-s4e1
 
 ## Results
 
+Kaggle submission: private score `0.88849`, [leaderboard](https://www.kaggle.com/competitions/playground-series-s4e1/leaderboard) `0.90585`.
+
 Models ranked by test ROC-AUC (80/20 train-test split):
 
 | Model | ROC-AUC | Train Time (s) |
