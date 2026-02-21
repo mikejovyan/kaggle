@@ -19,6 +19,8 @@ kaggle competitions download -c playground-series-s4e6
 
 ## Results
 
+Kaggle submission: private score `0.83620`, [leaderboard](https://www.kaggle.com/competitions/playground-series-s4e6/leaderboard) `0.84035`.
+
 Models ranked by test accuracy (80/20 train-test split):
 
 | Model | Accuracy | Train Time (s) |
