@@ -19,36 +19,36 @@ kaggle competitions download -c playground-series-s4e6
 
 ## Results
 
-Kaggle submission: private score `0.83620`, [leaderboard](https://www.kaggle.com/competitions/playground-series-s4e6/leaderboard) `0.84035`.
+The Kaggle submission achieved a private score of `0.83734`, compared to the [leaderboard](https://www.kaggle.com/competitions/playground-series-s4e6/leaderboard) top score of `0.84035`.
 
 Models ranked by test accuracy (80/20 train-test split):
 
 | Model | Accuracy | Train Time (s) |
 |-------|----------|----------------|
-| CatBoost | 0.835 | 84.5 |
-| LightGBM (Tuned) | 0.835 | 2346.1 |
-| LightGBM | 0.833 | 7.2 |
-| XGBoost | 0.832 | 17.3 |
-| Gradient Boosting | 0.830 | 170.3 |
-| Random Forest | 0.828 | 31.2 |
-| Logistic Regression | 0.818 | 182.5 |
-| AdaBoost | 0.809 | 13.1 |
-| Decision Tree | 0.741 | 4.3 |
+| LightGBM (Tuned) | 0.835 | 1190.3 |
+| LightGBM | 0.834 | 4.9 |
+| CatBoost | 0.833 | 56.6 |
+| XGBoost | 0.832 | 5.8 |
+| Gradient Boosting | 0.831 | 204.2 |
+| Random Forest | 0.827 | 45.0 |
+| Logistic Regression | 0.822 | 11.4 |
+| AdaBoost | 0.811 | 14.6 |
+| Decision Tree | 0.745 | 5.6 |
 | SVC | Too slow | - |
 
 **Best Model Configuration (LightGBM):**
-- `n_estimators`: 821
-- `learning_rate`: 0.0145
-- `num_leaves`: 45
-- `subsample`: 0.530
-- `colsample_bytree`: 0.647
-- `min_child_samples`: 137
-- `reg_alpha`: 3.04e-07
-- `reg_lambda`: 3.63e-08
+- `n_estimators`: 976
+- `learning_rate`: 0.02816
+- `num_leaves`: 31
+- `subsample`: 0.502
+- `colsample_bytree`: 0.523
+- `min_child_samples`: 105
+- `reg_alpha`: 2.05e-08
+- `reg_lambda`: 0.0555
 
 ## Key Findings
 
 - Gradient boosting algorithms (CatBoost, LightGBM, XGBoost, GB) significantly outperformed other methods
-- Default LightGBM achieved 83.3% accuracy with minimal training time (7.2s)
-- Optuna-tuned LightGBM matched CatBoost (83.5% accuracy) at a much higher time cost (2346s vs 85s)
+- Default LightGBM achieved 83.4% accuracy with minimal training time (4.9s)
+- Optuna-tuned LightGBM outperformed CatBoost (83.5% vs 83.3% accuracy) at a much higher time cost (1190s vs 57s)
 - SVC was excluded from full evaluation due to excessive training time on this dataset size
