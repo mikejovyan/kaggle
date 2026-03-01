@@ -1,6 +1,6 @@
-# Loan Approval Classification
+# Loan approval classification
 
-**Competition:** [Binary Classification with a Loan Approval Dataset](https://www.kaggle.com/competitions/playground-series-s4e10)
+**Competition:** [Binary classification with a loan approval dataset](https://www.kaggle.com/competitions/playground-series-s4e10)
 
 A binary classification project predicting whether an applicant is approved for a loan. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target `loan_status`.
 
@@ -23,7 +23,7 @@ The Kaggle submission achieved a private score of `0.96038`, compared to the [le
 
 Models ranked by test ROC-AUC (80/20 train-test split):
 
-| Model | ROC-AUC | Train Time (s) |
+| Model | ROC-AUC | Train time (s) |
 |-------|---------|----------------|
 | LightGBM (Tuned) | 0.961 | 268.2 |
 | LightGBM | 0.959 | 0.9 |
@@ -36,7 +36,7 @@ Models ranked by test ROC-AUC (80/20 train-test split):
 | SVC | 0.895 | 342.9 |
 | Decision Tree | 0.837 | 1.0 |
 
-**Best Model Configuration (LightGBM):**
+**Best model configuration (LightGBM):**
 - `n_estimators`: 448
 - `learning_rate`: 0.02137
 - `num_leaves`: 79
@@ -46,7 +46,7 @@ Models ranked by test ROC-AUC (80/20 train-test split):
 - `reg_alpha`: 3.62e-08
 - `reg_lambda`: 0.346
 
-## Key Findings
+## Key findings
 
 - Gradient boosting algorithms (LightGBM, XGBoost, CatBoost, GB) dominated, all achieving ROC-AUC above 0.944
 - Default LightGBM achieved 0.959 ROC-AUC with near-instant training (0.9s vs 268s for tuned)
