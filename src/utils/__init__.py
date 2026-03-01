@@ -7,7 +7,9 @@ from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import cross_val_predict
 
 
-def plot_confusion_matrix(cm: np.ndarray, target: str, class_labels: list[str]) -> None:
+def plot_confusion_matrix(
+    cm: np.ndarray, target: str, class_labels: list[str | int]
+) -> None:
     plt.figure(figsize=(6, 4))
     sns.heatmap(
         data=pd.DataFrame(cm, columns=class_labels, index=class_labels),
