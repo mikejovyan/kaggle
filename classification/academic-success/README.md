@@ -1,6 +1,6 @@
-# Academic Success Classification
+# Academic success classification
 
-**Competition:** [Classification with an Academic Success Dataset](https://www.kaggle.com/competitions/playground-series-s4e6)
+**Competition:** [Classification with an academic success dataset](https://www.kaggle.com/competitions/playground-series-s4e6)
 
 A multi-class classification project predicting student academic outcomes (Dropout, Enrolled, or Graduate). Submissions are evaluated using the accuracy score against the observed target `Target`.
 
@@ -23,7 +23,7 @@ The Kaggle submission achieved a private score of `0.83734`, compared to the [le
 
 Models ranked by test accuracy (80/20 train-test split):
 
-| Model | Accuracy | Train Time (s) |
+| Model | Accuracy | Train time (s) |
 |-------|----------|----------------|
 | LightGBM (Tuned) | 0.835 | 1190.3 |
 | LightGBM | 0.834 | 4.9 |
@@ -36,7 +36,7 @@ Models ranked by test accuracy (80/20 train-test split):
 | Decision Tree | 0.745 | 5.6 |
 | SVC | Too slow | - |
 
-**Best Model Configuration (LightGBM):**
+**Best model configuration (LightGBM):**
 - `n_estimators`: 976
 - `learning_rate`: 0.02816
 - `num_leaves`: 31
@@ -46,7 +46,7 @@ Models ranked by test accuracy (80/20 train-test split):
 - `reg_alpha`: 2.05e-08
 - `reg_lambda`: 0.0555
 
-## Key Findings
+## Key findings
 
 - Gradient boosting algorithms (CatBoost, LightGBM, XGBoost, GB) significantly outperformed other methods
 - Default LightGBM achieved 83.4% accuracy with minimal training time (4.9s)

@@ -1,6 +1,6 @@
-# Bank Churn Classification
+# Bank churn classification
 
-**Competition:** [Binary Classification with a Bank Churn Dataset](https://www.kaggle.com/competitions/playground-series-s4e1)
+**Competition:** [Binary classification with a bank churn dataset](https://www.kaggle.com/competitions/playground-series-s4e1)
 
 A binary classification project predicting whether a bank customer will churn (exit). Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target `Exited`.
 
@@ -24,7 +24,7 @@ The Kaggle submission achieved a private score of `0.89295`, compared to the [le
 
 Models ranked by test ROC-AUC (80/20 train-test split):
 
-| Model | ROC-AUC | Train Time (s) |
+| Model | ROC-AUC | Train time (s) |
 |-------|---------|----------------|
 | LightGBM | 0.896 | 3.8 |
 | LightGBM (Tuned) | 0.896 | 1689.3 |
@@ -37,7 +37,7 @@ Models ranked by test ROC-AUC (80/20 train-test split):
 | Decision Tree | 0.709 | 5.2 |
 | SVC | Too slow | - |
 
-**Best Model Configuration (LightGBM Tuned):**
+**Best model configuration (LightGBM Tuned):**
 - `n_estimators`: 865
 - `learning_rate`: 0.01502
 - `num_leaves`: 40
@@ -47,7 +47,7 @@ Models ranked by test ROC-AUC (80/20 train-test split):
 - `reg_alpha`: 0.0384
 - `reg_lambda`: 4.784
 
-## Key Findings
+## Key findings
 
 - Gradient boosting algorithms (LightGBM, CatBoost, GB, XGBoost) dominated, all achieving ROC-AUC above 0.892
 - Default LightGBM matched the tuned model (0.896 ROC-AUC) at a fraction of the training time (3.8s vs 1689.3s)
