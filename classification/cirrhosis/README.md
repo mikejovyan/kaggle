@@ -1,6 +1,6 @@
-# Cirrhosis Outcomes Classification
+# Cirrhosis outcomes classification
 
-**Competition:** [Multi-Class Prediction of Cirrhosis Outcomes](https://www.kaggle.com/competitions/playground-series-s3e26)
+**Competition:** [Multi-class prediction of cirrhosis outcomes](https://www.kaggle.com/competitions/playground-series-s3e26)
 
 A multi-class classification project predicting cirrhosis patient outcomes (C, CL, or D). Submissions are evaluated using the multi-class logarithmic loss against the observed target `Status`.
 
@@ -23,7 +23,7 @@ The Kaggle submission achieved a private score of `0.42704`, compared to the [le
 
 Models ranked by test log loss (80/20 train-test split):
 
-| Model | Log Loss | Train Time (s) |
+| Model | Log loss | Train time (s) |
 |-------|----------|----------------|
 | Gradient Boosting (Tuned) | 0.436 | 1428.9 |
 | Gradient Boosting | 0.439 | 13.1 |
@@ -36,7 +36,7 @@ Models ranked by test log loss (80/20 train-test split):
 | AdaBoost | 1.003 | 1.4 |
 | Decision Tree | 9.644 | 0.4 |
 
-**Best Model Configuration (Gradient Boosting):**
+**Best model configuration (Gradient Boosting):**
 - `n_estimators`: 220
 - `learning_rate`: 0.02224
 - `max_depth`: 5
@@ -44,9 +44,9 @@ Models ranked by test log loss (80/20 train-test split):
 - `min_samples_split`: 11
 - `min_samples_leaf`: 2
 
-## Key Findings
+## Key findings
 
-- Gradient boosting algorithms dominated, with tuned GB achieving the lowest log loss (0.433)
-- Default LightGBM was competitive despite near-instant training time (1.2s vs 1811s for tuned GB)
+- Gradient boosting algorithms dominated, with tuned GB achieving the lowest log loss (0.436)
+- Default LightGBM was competitive despite near-instant training time (1.4s vs 1429s for tuned GB)
 - AdaBoost and Decision Tree performed poorly on log loss, suggesting poor probability calibration
 - SVC completed evaluation on this smaller dataset (16.5s) and placed between Random Forest and XGBoost
