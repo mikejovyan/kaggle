@@ -10,3 +10,4 @@ Kaggle Playground Series classification competitions. Each subdirectory contains
 | [Loan approval](loan-approval/) | 58,645 | ROC-AUC | LightGBM | 0.959 | 0.961 | 0.960 | 0.969 | -0.009 |
 | [Mental health](mental-health/) | 140,700 | Accuracy | CatBoost | 0.940 | 0.940 | 0.940 | 0.942 | -0.002 |
 | [Obesity](obesity/) | 20,758 | Accuracy | LightGBM | 0.906 | 0.910 | 0.908 | 0.912 | -0.004 |
+| [Customer churn](customer-churn/) | 594,194 | ROC-AUC | LightGBM | 0.916 | 0.917 | TBD | TBD | TBD |
