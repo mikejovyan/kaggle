@@ -8,7 +8,7 @@ from sklearn.model_selection import cross_val_predict
 
 
 def plot_confusion_matrix(
-    cm: np.ndarray, target: str, class_labels: list[str | int]
+    cm: np.ndarray, target: str, class_labels: list[str] | list[int]
 ) -> None:
     plt.figure(figsize=(6, 4))
     sns.heatmap(
