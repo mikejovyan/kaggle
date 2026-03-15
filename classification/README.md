@@ -14,3 +14,4 @@ Kaggle Playground Series classification competitions. Each subdirectory contains
 | [Heart disease](heart-disease/) | 630,000 | ROC-AUC | CatBoost | 0.955 | 0.955 | 0.955 | 0.955 | -0.000 |
 | [Steel plate](steel-plate/) | 19,219 | ROC-AUC | XGBoost | 0.805 | 0.822 | 0.887 | 0.890 | -0.003 |
 | [Horse health](horse-health/) | 1,235 | F1-micro | Gradient Boosting | 0.733 | 0.729 | 0.742 | 0.782 | -0.040 |
+| [Smoker status](smoker-status/) | 159,256 | ROC-AUC | LightGBM | 0.862 | 0.868 | 0.872 | 0.879 | -0.007 |
