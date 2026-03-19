@@ -28,7 +28,7 @@ Kaggle Playground Series classification competitions. Each subdirectory contains
 | s4e2 | [Multi-Class Prediction of Obesity Risk](obesity/) | Multi-class | 20,758 | Accuracy | LightGBM | 0.906 | 0.910 | 0.908 | 0.912 | -0.004 |
 | s4e3 | [Steel Plate Defect Prediction](steel-plate/) | Multi-label | 19,219 | ROC-AUC | XGBoost | 0.805 | 0.822 | 0.887 | 0.890 | -0.003 |
 | s4e6 | [Classification with an Academic Success Dataset](academic-success/) | Multi-class | 76,518 | Accuracy | LightGBM | 0.834 | 0.835 | 0.837 | 0.840 | -0.003 |
-| s4e7 | Binary Classification Insurance Cross Selling | Binary | | | | | | | | |
+| s4e7 | [Binary classification of insurance cross-sell](insurance-cross-sell/) | Binary | 11,504,798 | ROC-AUC | LightGBM | 0.876 | 0.880 | 0.880 | 0.898 | -0.017 |
 | s4e8 | Binary Prediction of Poisonous Mushrooms | Binary | | | | | | | | |
 | s4e10 | [Loan Approval Prediction](loan-approval/) | Binary | 58,645 | ROC-AUC | LightGBM | 0.959 | 0.961 | 0.960 | 0.969 | -0.009 |
 | s4e11 | [Exploring Mental Health Data](mental-health/) | Multi-class | 140,700 | Accuracy | CatBoost | 0.940 | 0.940 | 0.940 | 0.942 | -0.002 |

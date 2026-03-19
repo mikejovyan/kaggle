@@ -40,3 +40,4 @@ coverage/
 # Kaggle datasets (but allow submissions)
 *.csv
 !submission.csv
+classification/insurance-cross-sell/submission.csv
