@@ -1,6 +1,6 @@
-# Heart disease classification
+# Predicting Heart Disease
 
-**Competition:** [Binary classification with a tabular heart disease dataset](https://www.kaggle.com/competitions/playground-series-s6e2)
+**Competition:** [Predicting Heart Disease](https://www.kaggle.com/competitions/playground-series-s6e2)
 
 A binary classification project predicting whether a patient has heart disease. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target `Heart Disease`.
 

@@ -1,6 +1,6 @@
-# Binary prediction of poisonous mushrooms
+# Binary Prediction of Poisonous Mushrooms
 
-**Competition:** [Binary prediction of poisonous mushrooms](https://www.kaggle.com/competitions/playground-series-s4e8)
+**Competition:** [Binary Prediction of Poisonous Mushrooms](https://www.kaggle.com/competitions/playground-series-s4e8)
 
 A binary classification project predicting whether a mushroom is edible or poisonous based on physical characteristics. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
 

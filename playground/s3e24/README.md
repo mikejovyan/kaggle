@@ -1,6 +1,6 @@
-# Smoker status classification
+# Binary Prediction of Smoker Status using Bio-Signals
 
-**Competition:** [Binary prediction of smoker status using bio-signals](https://www.kaggle.com/competitions/playground-series-s3e24/)
+**Competition:** [Binary Prediction of Smoker Status using Bio-Signals](https://www.kaggle.com/competitions/playground-series-s3e24)
 
 A binary classification project predicting whether a patient is a smoker based on bio-signal data. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
 

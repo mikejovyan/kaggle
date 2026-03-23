@@ -1,6 +1,6 @@
-# Insurance cross-sell classification
+# Binary Classification of Insurance Cross Selling
 
-**Competition:** [Binary classification of insurance cross-sell](https://www.kaggle.com/competitions/playground-series-s4e7/)
+**Competition:** [Binary Classification of Insurance Cross Selling](https://www.kaggle.com/competitions/playground-series-s4e7)
 
 A binary classification project predicting whether a health insurance customer would respond negatively or positively to  in vehicle insurance, based on demographic and vehicle data. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
 

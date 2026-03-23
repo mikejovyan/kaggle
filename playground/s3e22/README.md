@@ -1,6 +1,6 @@
-# Horse health classification
+# Predict Health Outcomes of Horses
 
-**Competition:** [Multi-class prediction of horse health outcomes](https://www.kaggle.com/competitions/playground-series-s3e22)
+**Competition:** [Predict Health Outcomes of Horses](https://www.kaggle.com/competitions/playground-series-s3e22)
 
 A multi-class classification project predicting horse health outcomes (lived, died, or euthanized). Submissions are evaluated using the micro-averaged F1 score against the observed target `outcome`.
 
