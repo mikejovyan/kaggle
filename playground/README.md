@@ -22,7 +22,7 @@
 | [s4e3](https://www.kaggle.com/competitions/playground-series-s4e3) | [Steel Plate Defect Prediction](s4e3/) | 19,219 | ROC-AUC | XGBoost | 0.805 | 0.822 | 0.887 | 0.890 | -0.003 |
 | [s4e6](https://www.kaggle.com/competitions/playground-series-s4e6) | [Classification with an Academic Success Dataset](s4e6/) | 76,518 | Accuracy | LightGBM | 0.834 | 0.835 | 0.837 | 0.840 | -0.003 |
 | [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](s4e7/) | 11,504,798 | ROC-AUC | LightGBM | 0.876 | 0.880 | 0.880 | 0.898 | -0.017 |
-| [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](s4e8/) | | | | | | | | |
+| [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](s4e8/) | 3,116,945 | ROC-AUC | XGBoost | 0.997 | 0.997 | 0.985 | 0.985 | -0.001 |
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](s4e10/) | 58,645 | ROC-AUC | LightGBM | 0.959 | 0.961 | 0.960 | 0.969 | -0.009 |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](s4e11/) | 140,700 | Accuracy | CatBoost | 0.940 | 0.940 | 0.940 | 0.942 | -0.002 |
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | Binary Prediction with a Rainfall Dataset | | | | | | | | |
