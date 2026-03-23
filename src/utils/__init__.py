@@ -1,8 +1,9 @@
+from typing import Any
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from sklearn.base import BaseEstimator
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import cross_val_predict
 
@@ -259,7 +260,7 @@ def plot_target_correlations(
 def validate_train_test_distribution(
     train_data: pd.DataFrame,
     test_data: pd.DataFrame,
-    model: BaseEstimator,
+    model: Any,
     features: list | None = None,
     cv: int = 5,
     threshold: float = 0.6,
