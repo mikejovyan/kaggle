@@ -1,6 +1,6 @@
-# Mental health classification
+# Exploring Mental Health Data
 
-**Competition:** [Binary classification with a mental health dataset](https://www.kaggle.com/competitions/playground-series-s4e11)
+**Competition:** [Exploring Mental Health Data](https://www.kaggle.com/competitions/playground-series-s4e11)
 
 A binary classification project predicting whether an individual has depression. Submissions are evaluated using the accuracy score against the observed target `Depression`.
 

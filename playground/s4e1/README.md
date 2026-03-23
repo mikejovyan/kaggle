@@ -1,6 +1,6 @@
-# Bank churn classification
+# Binary Classification with a Bank Churn Dataset
 
-**Competition:** [Binary classification with a bank churn dataset](https://www.kaggle.com/competitions/playground-series-s4e1)
+**Competition:** [Binary Classification with a Bank Churn Dataset](https://www.kaggle.com/competitions/playground-series-s4e1)
 
 A binary classification project predicting whether a bank customer will churn (exit). Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target `Exited`.
 

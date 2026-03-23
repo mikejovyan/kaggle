@@ -1,6 +1,6 @@
-# Obesity classification
+# Multi-Class Prediction of Obesity Risk
 
-**Competition:** [Multi-class prediction of obesity risk](https://www.kaggle.com/competitions/playground-series-s4e2)
+**Competition:** [Multi-Class Prediction of Obesity Risk](https://www.kaggle.com/competitions/playground-series-s4e2)
 
 A multi-class classification project predicting obesity risk levels based on eating habits and physical condition. Submissions are evaluated using the accuracy score against the observed target `NObeyesdad`.
 

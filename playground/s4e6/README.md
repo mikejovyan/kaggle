@@ -1,6 +1,6 @@
-# Academic success classification
+# Classification with an Academic Success Dataset
 
-**Competition:** [Classification with an academic success dataset](https://www.kaggle.com/competitions/playground-series-s4e6)
+**Competition:** [Classification with an Academic Success Dataset](https://www.kaggle.com/competitions/playground-series-s4e6)
 
 A multi-class classification project predicting student academic outcomes (Dropout, Enrolled, or Graduate). Submissions are evaluated using the accuracy score against the observed target `Target`.
 

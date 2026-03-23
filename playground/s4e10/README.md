@@ -1,6 +1,6 @@
-# Loan approval classification
+# Loan Approval Prediction
 
-**Competition:** [Binary classification with a loan approval dataset](https://www.kaggle.com/competitions/playground-series-s4e10)
+**Competition:** [Loan Approval Prediction](https://www.kaggle.com/competitions/playground-series-s4e10)
 
 A binary classification project predicting whether an applicant is approved for a loan. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target `loan_status`.
 

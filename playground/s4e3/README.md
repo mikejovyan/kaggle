@@ -1,6 +1,6 @@
-# Steel plate fault classification
+# Steel Plate Defect Prediction
 
-**Competition:** [Multi-class classification with a tabular steel plate faults dataset](https://www.kaggle.com/competitions/playground-series-s4e3)
+**Competition:** [Steel Plate Defect Prediction](https://www.kaggle.com/competitions/playground-series-s4e3)
 
 A multi-class classification project predicting the type of fault on a steel plate. Submissions are evaluated on area under the ROC curve (OvR, weighted) across 7 fault classes: Pastry, Z_Scratch, K_Scatch, Stains, Dirtiness, Bumps, Other_Faults.
 

@@ -1,6 +1,6 @@
-# Cirrhosis outcomes classification
+# Multi-Class Prediction of Cirrhosis Outcomes
 
-**Competition:** [Multi-class prediction of cirrhosis outcomes](https://www.kaggle.com/competitions/playground-series-s3e26)
+**Competition:** [Multi-Class Prediction of Cirrhosis Outcomes](https://www.kaggle.com/competitions/playground-series-s3e26)
 
 A multi-class classification project predicting cirrhosis patient outcomes (C, CL, or D). Submissions are evaluated using the multi-class logarithmic loss against the observed target `Status`.
 

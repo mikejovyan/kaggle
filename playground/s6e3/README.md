@@ -1,6 +1,6 @@
-# Customer churn classification
+# Predict Customer Churn
 
-**Competition:** [Binary classification with a tabular customer churn dataset](https://www.kaggle.com/competitions/playground-series-s6e3)
+**Competition:** [Predict Customer Churn](https://www.kaggle.com/competitions/playground-series-s6e3)
 
 A binary classification project predicting whether a customer will churn. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target `Churn`.
 
