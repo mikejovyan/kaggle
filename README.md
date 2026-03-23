@@ -30,14 +30,14 @@
 | [s3e24](https://www.kaggle.com/competitions/playground-series-s3e24) | [Binary Prediction of Smoker Status using Bio-Signals](playground/s3e24/) | Classification |
 | [s3e25](https://www.kaggle.com/competitions/playground-series-s3e25) | Regression with a Mohs Hardness Dataset | Regression |
 | [s3e26](https://www.kaggle.com/competitions/playground-series-s3e26) | [Multi-Class Prediction of Cirrhosis Outcomes](playground/s3e26/) | Classification |
-| [s4e1](https://www.kaggle.com/competitions/playground-series-s4e1) | [Binary Classification with a Bank Churn Dataset](playground/s4e1/) | Classification |
-| [s4e2](https://www.kaggle.com/competitions/playground-series-s4e2) | [Multi-Class Prediction of Obesity Risk](playground/s4e2/) | Classification |
-| [s4e3](https://www.kaggle.com/competitions/playground-series-s4e3) | [Steel Plate Defect Prediction](playground/s4e3/) | Classification |
+| [s4e1](https://www.kaggle.com/competitions/playground-series-s4e1) | [Binary Classification with a Bank Churn Dataset](playground/s4e01/) | Classification |
+| [s4e2](https://www.kaggle.com/competitions/playground-series-s4e2) | [Multi-Class Prediction of Obesity Risk](playground/s4e02/) | Classification |
+| [s4e3](https://www.kaggle.com/competitions/playground-series-s4e3) | [Steel Plate Defect Prediction](playground/s4e03/) | Classification |
 | [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | Regression with an Abalone Dataset | Regression |
 | [s4e5](https://www.kaggle.com/competitions/playground-series-s4e5) | Regression with a Flood Prediction Dataset | Regression |
-| [s4e6](https://www.kaggle.com/competitions/playground-series-s4e6) | [Classification with an Academic Success Dataset](playground/s4e6/) | Classification |
-| [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](playground/s4e7/) | Classification |
-| [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](playground/s4e8/) | Classification |
+| [s4e6](https://www.kaggle.com/competitions/playground-series-s4e6) | [Classification with an Academic Success Dataset](playground/s4e06/) | Classification |
+| [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](playground/s4e07/) | Classification |
+| [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](playground/s4e08/) | Classification |
 | [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | Regression of Used Car Prices | Regression |
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](playground/s4e10/) | Classification |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](playground/s4e11/) | Classification |
@@ -55,8 +55,8 @@
 | [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | Predicting Loan Payback | Classification |
 | [s5e12](https://www.kaggle.com/competitions/playground-series-s5e12) | Diabetes Prediction Challenge | Classification |
 | [s6e1](https://www.kaggle.com/competitions/playground-series-s6e1) | Predicting Student Test Scores | Regression |
-| [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](playground/s6e2/) | Classification |
-| [s6e3](https://www.kaggle.com/competitions/playground-series-s6e3) | [Predict Customer Churn](playground/s6e3/) | Classification |
+| [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](playground/s6e02/) | Classification |
+| [s6e3](https://www.kaggle.com/competitions/playground-series-s6e3) | [Predict Customer Churn](playground/s6e03/) | Classification |
 
 ## Commit Convention
 
