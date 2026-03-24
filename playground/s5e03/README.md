@@ -43,7 +43,7 @@ Models ranked by test ROC-AUC (temporal split — last year held out):
 
 ## Key findings
 
-- Gradient boosting methods (GB, AdaBoost) and Logistic Regression achieved the highest test ROC-AUC (0.885–0.886), outperforming CatBoost on the held-out test set despite CatBoost matching LR on CV (0.890 vs 0.896)
-- CatBoost tuning with Optuna (30 trials) improved CV score from 0.890 to 0.896 but did not improve test ROC-AUC, suggesting the tuned model overfit to the training distribution
-- The small dataset (1,825 training samples) leads to a gap between CV (0.896) and test (0.877) performance for CatBoost
+- Local test results are unreliable due to the small dataset size (365 test samples); the Kaggle private score is the more meaningful measure of model performance
+- CatBoost (Tuned) ranked 4th locally (0.877 ROC-AUC) but achieved the best Kaggle private score (0.90335), confirming the local test set is too small to distinguish models reliably
+- CatBoost tuning with Optuna (30 trials) improved CV score from 0.890 to 0.896 and paid off on the actual leaderboard despite appearing to underperform locally
 - Target is imbalanced (75.3% rainfall vs 24.7% no rainfall), with all boosting methods handling this without resampling
