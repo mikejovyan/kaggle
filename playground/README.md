@@ -25,7 +25,7 @@
 | [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](s4e08/) | ROC-AUC | XGBoost | 0.985 | 0.985 |
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](s4e10/) | ROC-AUC | LightGBM | 0.960 | 0.969 |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](s4e11/) | Accuracy | CatBoost | 0.940 | 0.942 |
-| [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | Binary Prediction with a Rainfall Dataset | | | | |
+| [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](s5e03/) | ROC-AUC | CatBoost | 0.90335 | 0.90654 |
 | [s5e6](https://www.kaggle.com/competitions/playground-series-s5e6) | Predicting Optimal Fertilizers | | | | |
 | [s5e7](https://www.kaggle.com/competitions/playground-series-s5e7) | Predict the Introverts from the Extroverts | | | | |
 | [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | Binary Classification with a Bank Dataset | | | | |
