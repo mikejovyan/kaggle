@@ -25,7 +25,7 @@ Local test results show limited resolution for distinguishing models — many ar
 
 Models ranked by test accuracy (80/20 stratified split):
 
-| Model | Accuracy | Balanced accuracy | MCC | ROC-AUC | Train time (s) |
+| Model | Accuracy | Balanced accuracy | MCC | ROC AUC | Train time (s) |
 |-------|----------|-------------------|-----|---------|----------------|
 | SVC | 0.969 | 0.956 | 0.918 | 0.967 | 19.5 |
 | AdaBoost | 0.969 | 0.956 | 0.918 | 0.965 | 0.8 |

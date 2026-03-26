@@ -269,7 +269,7 @@ def validate_train_test_distribution(
     Validate that train and test sets have similar distributions.
 
     Uses a discriminator model to try to distinguish train from test samples.
-    If the model can't distinguish them well (ROC-AUC < threshold), they're
+    If the model can't distinguish them well (ROC AUC < threshold), they're
     likely from the same distribution.
     """
     if features:

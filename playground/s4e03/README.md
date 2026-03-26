@@ -20,9 +20,9 @@ kaggle competitions download -c playground-series-s4e3
 
 The Kaggle submission achieved a private score of `0.88684`, compared to the [leaderboard](https://www.kaggle.com/competitions/playground-series-s4e3/leaderboard) top score of `0.88977`.
 
-Models ranked by test ROC-AUC (80/20 train-test split):
+Models ranked by test ROC AUC (80/20 train-test split):
 
-| Model | ROC-AUC | Train time (s) |
+| Model | ROC AUC | Train time (s) |
 |-------|---------|----------------|
 | XGBoost (Tuned) | 0.822 | 670.8 |
 | Gradient Boosting | 0.816 | 157.4 |
@@ -46,8 +46,8 @@ Models ranked by test ROC-AUC (80/20 train-test split):
 
 ## Key findings
 
-- Gradient boosting algorithms dominated, with XGBoost (tuned), Gradient Boosting, LightGBM, and CatBoost all achieving ROC-AUC above 0.809
-- Tuning XGBoost improved ROC-AUC from 0.805 to 0.822, a meaningful gain on this smaller dataset
+- Gradient boosting algorithms dominated, with XGBoost (tuned), Gradient Boosting, LightGBM, and CatBoost all achieving ROC AUC above 0.809
+- Tuning XGBoost improved ROC AUC from 0.805 to 0.822, a meaningful gain on this smaller dataset
 - 21 rows had multiple defects; these were resolved by assigning K_Scatch as the primary class
 - Target is heavily imbalanced (Other_Faults 34% vs Dirtiness 2.5%), though boosting methods handled this well without resampling
 - SVC was excluded from full evaluation due to excessive training time on this dataset size

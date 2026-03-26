@@ -21,9 +21,9 @@ kaggle competitions download -c playground-series-s4e10
 
 The Kaggle submission achieved a private score of `0.96038`, compared to the [leaderboard](https://www.kaggle.com/competitions/playground-series-s4e10/leaderboard) top score of `0.96938`.
 
-Models ranked by test ROC-AUC (80/20 train-test split):
+Models ranked by test ROC AUC (80/20 train-test split):
 
-| Model | ROC-AUC | Train time (s) |
+| Model | ROC AUC | Train time (s) |
 |-------|---------|----------------|
 | LightGBM (Tuned) | 0.961 | 268.2 |
 | LightGBM | 0.959 | 0.9 |
@@ -48,7 +48,7 @@ Models ranked by test ROC-AUC (80/20 train-test split):
 
 ## Key findings
 
-- Gradient boosting algorithms (LightGBM, XGBoost, CatBoost, GB) dominated, all achieving ROC-AUC above 0.944
-- Default LightGBM achieved 0.959 ROC-AUC with near-instant training (0.9s vs 268s for tuned)
-- SVC completed but was much slower than most models (342.9s) for only 0.895 ROC-AUC
+- Gradient boosting algorithms (LightGBM, XGBoost, CatBoost, GB) dominated, all achieving ROC AUC above 0.944
+- Default LightGBM achieved 0.959 ROC AUC with near-instant training (0.9s vs 268s for tuned)
+- SVC completed but was much slower than most models (342.9s) for only 0.895 ROC AUC
 - Dataset is heavily imbalanced (85.8% not approved vs 14.2% approved), though boosting methods handled this well without resampling

@@ -15,24 +15,24 @@
 | [s3e18](https://www.kaggle.com/competitions/playground-series-s3e18) | Explore Multi-Label Classification with an Enzyme Substrate Dataset | | | | |
 | [s3e22](https://www.kaggle.com/competitions/playground-series-s3e22) | [Predict Health Outcomes of Horses](s3e22/) | F1-micro | GB | 0.742420 | 0.781810 |
 | [s3e23](https://www.kaggle.com/competitions/playground-series-s3e23) | Binary Classification with a Software Defects Dataset | | | | |
-| [s3e24](https://www.kaggle.com/competitions/playground-series-s3e24) | [Binary Prediction of Smoker Status using Bio-Signals](s3e24/) | ROC-AUC | LGBM | 0.872220 | 0.879460 |
+| [s3e24](https://www.kaggle.com/competitions/playground-series-s3e24) | [Binary Prediction of Smoker Status using Bio-Signals](s3e24/) | ROC AUC | LGBM | 0.872220 | 0.879460 |
 | [s3e26](https://www.kaggle.com/competitions/playground-series-s3e26) | [Multi-Class Prediction of Cirrhosis Outcomes](s3e26/) | Log loss | GB | 0.427040 | 0.391040 |
-| [s4e1](https://www.kaggle.com/competitions/playground-series-s4e1) | [Binary Classification with a Bank Churn Dataset](s4e01/) | ROC-AUC | LGBM | 0.892950 | 0.905850 |
+| [s4e1](https://www.kaggle.com/competitions/playground-series-s4e1) | [Binary Classification with a Bank Churn Dataset](s4e01/) | ROC AUC | LGBM | 0.892950 | 0.905850 |
 | [s4e2](https://www.kaggle.com/competitions/playground-series-s4e2) | [Multi-Class Prediction of Obesity Risk](s4e02/) | Accuracy | LGBM | 0.907960 | 0.911570 |
-| [s4e3](https://www.kaggle.com/competitions/playground-series-s4e3) | [Steel Plate Defect Prediction](s4e03/) | ROC-AUC | XGB | 0.886840 | 0.889770 |
+| [s4e3](https://www.kaggle.com/competitions/playground-series-s4e3) | [Steel Plate Defect Prediction](s4e03/) | ROC AUC | XGB | 0.886840 | 0.889770 |
 | [s4e6](https://www.kaggle.com/competitions/playground-series-s4e6) | [Classification with an Academic Success Dataset](s4e06/) | Accuracy | LGBM | 0.837340 | 0.840350 |
-| [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](s4e07/) | ROC-AUC | LGBM | 0.880360 | 0.897540 |
-| [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](s4e08/) | ROC-AUC | XGB | 0.984540 | 0.985140 |
-| [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](s4e10/) | ROC-AUC | LGBM | 0.960380 | 0.969380 |
+| [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](s4e07/) | ROC AUC | LGBM | 0.880360 | 0.897540 |
+| [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](s4e08/) | ROC AUC | XGB | 0.984540 | 0.985140 |
+| [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](s4e10/) | ROC AUC | LGBM | 0.960380 | 0.969380 |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](s4e11/) | Accuracy | CB | 0.940230 | 0.941840 |
-| [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](s5e03/) | ROC-AUC | CB | 0.903350 | 0.906540 |
+| [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](s5e03/) | ROC AUC | CB | 0.903350 | 0.906540 |
 | [s5e6](https://www.kaggle.com/competitions/playground-series-s5e6) | Predicting Optimal Fertilizers | | | | |
 | [s5e7](https://www.kaggle.com/competitions/playground-series-s5e7) | [Predict the Introverts from the Extroverts](s5e07/) | Accuracy | GB | 0.968825 | 0.970647 |
 | [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | Binary Classification with a Bank Dataset | | | | |
 | [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | Predicting Loan Payback | | | | |
 | [s5e12](https://www.kaggle.com/competitions/playground-series-s5e12) | Diabetes Prediction Challenge | | | | |
-| [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](s6e02/) | ROC-AUC | CB | 0.955150 | 0.955350 |
-| [s6e3](https://www.kaggle.com/competitions/playground-series-s6e3) | [Predict Customer Churn](s6e03/) | ROC-AUC | LGBM | TBD | TBD |
+| [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](s6e02/) | ROC AUC | CB | 0.955150 | 0.955350 |
+| [s6e3](https://www.kaggle.com/competitions/playground-series-s6e3) | [Predict Customer Churn](s6e03/) | ROC AUC | LGBM | TBD | TBD |
 
 Model abbreviations: GB = Gradient Boosting, LGBM = LightGBM, XGB = XGBoost, CB = CatBoost
 

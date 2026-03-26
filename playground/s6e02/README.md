@@ -21,9 +21,9 @@ kaggle competitions download -c playground-series-s6e2
 
 The Kaggle submission achieved a private score of `0.95515`, compared to the [leaderboard](https://www.kaggle.com/competitions/playground-series-s6e2/leaderboard) top score of `0.95535`.
 
-Models ranked by test ROC-AUC (80/20 train-test split):
+Models ranked by test ROC AUC (80/20 train-test split):
 
-| Model | ROC-AUC | Train time (s) |
+| Model | ROC AUC | Train time (s) |
 |-------|---------|----------------|
 | CatBoost (Tuned) | 0.955 | 1969.6 |
 | CatBoost | 0.955 | 162.7 |
@@ -45,8 +45,8 @@ Models ranked by test ROC-AUC (80/20 train-test split):
 
 ## Key findings
 
-- Gradient boosting algorithms (CatBoost, XGBoost, LightGBM, GB) dominated, all achieving ROC-AUC above 0.954
-- Default CatBoost, XGBoost, and LightGBM all tied at 0.955 ROC-AUC with tuning providing only marginal improvement
+- Gradient boosting algorithms (CatBoost, XGBoost, LightGBM, GB) dominated, all achieving ROC AUC above 0.954
+- Default CatBoost, XGBoost, and LightGBM all tied at 0.955 ROC AUC with tuning providing only marginal improvement
 - Random Forest underperformed relative to other ensemble methods (0.946 vs 0.954+)
 - Dataset is relatively balanced (55.2% Absence vs 44.8% Presence), requiring no resampling
 - SVC was excluded from full evaluation due to excessive training time on this dataset size
