@@ -48,6 +48,6 @@ Models ranked by test ROC AUC (80/20 train-test split):
 
 - Gradient boosting algorithms (LightGBM, CatBoost, XGBoost, GB) dominated, all achieving ROC AUC above 0.856
 - Default XGBoost and LightGBM achieved near-equivalent performance (0.863 and 0.862) with tuning adding only marginal improvement (0.868) at a large time cost (2.4s vs 721.5s)
-- CatBoost performed strongly without tuning (0.865), close to the tuned LightGBM result
+- CatBoost reached 0.865 with default parameters, close to the tuned LightGBM result
 - The dataset is moderately imbalanced (56.3% non-smoker vs 43.7% smoker), but this did not require resampling
 - A gap remains between the local test score (0.868) and the Kaggle private score (0.872), suggesting the full training data helps generalisation

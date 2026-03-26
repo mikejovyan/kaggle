@@ -44,5 +44,5 @@ Models ranked by test ROC AUC (80/20 train-test split):
 - At over 11.5 million training rows, this is by far the largest dataset in the series. The sheer size means most models (Logistic Regression, SVC, Random Forest, Decision Tree, Gradient Boosting, AdaBoost, CatBoost) were too slow to run and were excluded. Only XGBoost and LightGBM completed in a reasonable time, with even the Optuna tuning step taking nearly 48 minutes per trial. The submission file is not tracked in this repo due to its size (218 MB) — see [.gitignore](../../.gitignore#L43).
 - The dataset is heavily imbalanced (87.7% class 0), which is reflected in the low balanced accuracy scores (0.53–0.55) despite high overall accuracy (~0.880).
 - Tuning LightGBM with just 5 Optuna trials improved ROC AUC from 0.876 to 0.880 at the cost of 47 minutes of training time (vs ~2 minutes untuned).
-- XGBoost matched LightGBM untuned performance (0.878) and was faster to train (107s vs 137s).
+- XGBoost matched LightGBM base performance (0.878) and was faster to train (107s vs 137s).
 - The gap between local test score (0.880) and Kaggle private score (0.880) is negligible, likely because the massive dataset size makes the 80/20 split a reliable proxy for generalisation.
