@@ -19,9 +19,9 @@ kaggle competitions download -c playground-series-s5e3
 
 The Kaggle submission achieved a private score of `0.90335`, compared to the [leaderboard](https://www.kaggle.com/competitions/playground-series-s5e3/leaderboard) top score of `0.90654`.
 
-Models ranked by test ROC-AUC (temporal split — last year held out):
+Models ranked by test ROC AUC (temporal split — last year held out):
 
-| Model | ROC-AUC | Train time (s) |
+| Model | ROC AUC | Train time (s) |
 |-------|---------|----------------|
 | Gradient Boosting | 0.886 | 1.4 |
 | AdaBoost | 0.885 | 0.5 |
@@ -44,6 +44,6 @@ Models ranked by test ROC-AUC (temporal split — last year held out):
 ## Key findings
 
 - Local test results are unreliable due to the small dataset size (365 test samples); the Kaggle private score is the more meaningful measure of model performance
-- CatBoost (Tuned) ranked 4th locally (0.877 ROC-AUC) but achieved the best Kaggle private score (0.90335), confirming the local test set is too small to distinguish models reliably
+- CatBoost (Tuned) ranked 4th locally (0.877 ROC AUC) but achieved the best Kaggle private score (0.90335), confirming the local test set is too small to distinguish models reliably
 - CatBoost tuning with Optuna (30 trials) improved CV score from 0.890 to 0.896 and paid off on the actual leaderboard despite appearing to underperform locally
 - Target is imbalanced (75.3% rainfall vs 24.7% no rainfall), with all boosting methods handling this without resampling

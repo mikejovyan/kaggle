@@ -22,9 +22,9 @@ kaggle competitions download -c playground-series-s4e1
 
 The Kaggle submission achieved a private score of `0.89295`, compared to the [leaderboard](https://www.kaggle.com/competitions/playground-series-s4e1/leaderboard) top score of `0.90585`.
 
-Models ranked by test ROC-AUC (80/20 train-test split):
+Models ranked by test ROC AUC (80/20 train-test split):
 
-| Model | ROC-AUC | Train time (s) |
+| Model | ROC AUC | Train time (s) |
 |-------|---------|----------------|
 | LightGBM | 0.896 | 3.8 |
 | LightGBM (Tuned) | 0.896 | 1689.3 |
@@ -49,7 +49,7 @@ Models ranked by test ROC-AUC (80/20 train-test split):
 
 ## Key findings
 
-- Gradient boosting algorithms (LightGBM, CatBoost, GB, XGBoost) dominated, all achieving ROC-AUC above 0.892
-- Default LightGBM matched the tuned model (0.896 ROC-AUC) at a fraction of the training time (3.8s vs 1689.3s)
+- Gradient boosting algorithms (LightGBM, CatBoost, GB, XGBoost) dominated, all achieving ROC AUC above 0.892
+- Default LightGBM matched the tuned model (0.896 ROC AUC) at a fraction of the training time (3.8s vs 1689.3s)
 - SVC was excluded from full evaluation due to excessive training time on this dataset size
 - Submission uses predicted churn probabilities (`predict_proba`) rather than class labels, as required by the competition

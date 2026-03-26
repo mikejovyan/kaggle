@@ -20,9 +20,9 @@ kaggle competitions download -c playground-series-s3e24
 
 The Kaggle submission achieved a private score of `0.87222`, compared to the [leaderboard](https://www.kaggle.com/competitions/playground-series-s3e24/leaderboard) top score of `0.87946`.
 
-Models ranked by test ROC-AUC (80/20 train-test split):
+Models ranked by test ROC AUC (80/20 train-test split):
 
-| Model | ROC-AUC | Train time (s) |
+| Model | ROC AUC | Train time (s) |
 |-------|---------|----------------|
 | LightGBM (Tuned) | 0.868 | 721.5 |
 | CatBoost | 0.865 | 47.6 |
@@ -46,7 +46,7 @@ Models ranked by test ROC-AUC (80/20 train-test split):
 
 ## Key findings
 
-- Gradient boosting algorithms (LightGBM, CatBoost, XGBoost, GB) dominated, all achieving ROC-AUC above 0.856
+- Gradient boosting algorithms (LightGBM, CatBoost, XGBoost, GB) dominated, all achieving ROC AUC above 0.856
 - Default XGBoost and LightGBM achieved near-equivalent performance (0.863 and 0.862) with tuning adding only marginal improvement (0.868) at a large time cost (2.4s vs 721.5s)
 - CatBoost performed strongly without tuning (0.865), close to the tuned LightGBM result
 - The dataset is moderately imbalanced (56.3% non-smoker vs 43.7% smoker), but this did not require resampling
