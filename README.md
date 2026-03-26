@@ -49,7 +49,7 @@
 | [s5e5](https://www.kaggle.com/competitions/playground-series-s5e5) | Predict Calorie Expenditure | Regression |
 | [s5e6](https://www.kaggle.com/competitions/playground-series-s5e6) | Predicting Optimal Fertilizers | Classification |
 | [s5e7](https://www.kaggle.com/competitions/playground-series-s5e7) | [Predict the Introverts from the Extroverts](playground/s5e07/) | Classification |
-| [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | Binary Classification with a Bank Dataset | Classification |
+| [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | [Binary Classification with a Bank Dataset](playground/s5e08/) | Classification |
 | [s5e9](https://www.kaggle.com/competitions/playground-series-s5e9) | Predicting the Beats-per-Minute of Songs | Regression |
 | [s5e10](https://www.kaggle.com/competitions/playground-series-s5e10) | Predicting Road Accident Risk | Regression |
 | [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | Predicting Loan Payback | Classification |

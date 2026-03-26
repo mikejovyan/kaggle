@@ -28,7 +28,7 @@
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](s5e03/) | ROC AUC | CB | 0.903350 | 0.906540 |
 | [s5e6](https://www.kaggle.com/competitions/playground-series-s5e6) | Predicting Optimal Fertilizers | | | | |
 | [s5e7](https://www.kaggle.com/competitions/playground-series-s5e7) | [Predict the Introverts from the Extroverts](s5e07/) | Accuracy | GB | 0.968825 | 0.970647 |
-| [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | Binary Classification with a Bank Dataset | | | | |
+| [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | [Binary Classification with a Bank Dataset](s5e08/) | ROC AUC | LGBM | 0.967870 | 0.978010 |
 | [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | Predicting Loan Payback | | | | |
 | [s5e12](https://www.kaggle.com/competitions/playground-series-s5e12) | Diabetes Prediction Challenge | | | | |
 | [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](s6e02/) | ROC AUC | CB | 0.955150 | 0.955350 |
