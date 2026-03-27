@@ -11,11 +11,12 @@ kaggle competitions download -c playground-series-s6e2
 ```
 
 - Training samples: 630,000
-- Features: 13 total (excluding target)
-  - Numerical: 5 features
-  - Nominal: 3 features
-  - Ordinal: 5 features
-- Target classes: Absence (55.2%), Presence (44.8%)
+- Target classes: 0/Absence (55%), 1/Presence (45%)
+- Features: 13 total
+  - Numerical: 5 (`Age`, `BP`, `Cholesterol`, `Max HR`, `ST depression`)
+  - Nominal: 3 (`Chest pain type`, `EKG results`, `Thallium`)
+  - Ordinal: 5 (`Exercise angina`, `FBS over 120`, `Number of vessels fluro`, `Sex`, `Slope of ST`)
+- Missing values: none
 
 ## Results
 
@@ -49,4 +50,4 @@ Models ranked by test ROC AUC (80/20 train-test split):
 - Default CatBoost, XGBoost, and LightGBM all tied at 0.955 ROC AUC with tuning providing only marginal improvement
 - Random Forest underperformed relative to other ensemble methods (0.946 vs 0.954+)
 - Dataset is relatively balanced (55.2% Absence vs 44.8% Presence), requiring no resampling
-- SVC was excluded from full evaluation due to excessive training time on this dataset size
+

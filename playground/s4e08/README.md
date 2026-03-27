@@ -2,7 +2,7 @@
 
 **Competition:** [Binary Prediction of Poisonous Mushrooms](https://www.kaggle.com/competitions/playground-series-s4e8)
 
-A binary classification project predicting whether a mushroom is edible or poisonous based on physical characteristics. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
+A binary classification project predicting whether a mushroom is edible or poisonous based on physical characteristics. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target `class`.
 
 ## Dataset
 
@@ -11,11 +11,12 @@ kaggle competitions download -c playground-series-s4e8
 ```
 
 - Training samples: 3,116,945
-- Features: 20 total (excluding target)
-  - Numerical: 3 features (cap-diameter, stem-height, stem-width)
-  - Nominal: 1 feature (season)
-  - Ordinal: 16 features (cap-color, cap-shape, cap-surface, does-bruise-or-bleed, gill-attachment, gill-color, gill-spacing, habitat, has-ring, ring-type, spore-print-color, stem-color, stem-root, stem-surface, veil-color, veil-type)
-- Target classes: e/Edible (45.3%), p/Poisonous (54.7%)
+- Target classes: e/Edible (45%), p/Poisonous (55%)
+- Features: 20 total
+  - Numerical: 3 (`cap-diameter`, `stem-height`, `stem-width`)
+  - Nominal: 1 (`season`)
+  - Ordinal: 16 (`cap-color`, `cap-shape`, `cap-surface`, `does-bruise-or-bleed`, `gill-attachment`, `gill-color`, `gill-spacing`, `habitat`, `has-ring`, `ring-type`, `spore-print-color`, `stem-color`, `stem-root`, `stem-surface`, `veil-color`, `veil-type`)
+- Missing values: present in 15 features (up to 2,957,493 missing per feature)
 
 ## Results
 
@@ -33,8 +34,10 @@ Models ranked by test ROC AUC (80/20 train-test split):
 | Decision Tree | 0.983 | 100.5 |
 | AdaBoost | 0.778 | 300.3 |
 | Logistic Regression | 0.707 | 98.2 |
+| Gradient Boosting | Too slow | - |
+| SVC | Too slow | - |
 
-**Best model configuration (XGBoost tuned):**
+**Best model configuration (XGBoost):**
 - `n_estimators`: 437
 - `max_depth`: 10
 - `learning_rate`: 0.06505
@@ -49,4 +52,4 @@ Models ranked by test ROC AUC (80/20 train-test split):
 - Default XGBoost matched the tuned model (0.997 ROC AUC) at a fraction of the training time (49s vs 1565s), suggesting the default hyperparameters were already near-optimal for this dataset.
 - Tuning with Optuna used the same hyperparameters as the insurance cross-sell competition (n_estimators, max_depth, learning_rate, subsample, colsample_bytree, min_child_weight, gamma), which happened to converge on nearly identical values.
 - AdaBoost and Logistic Regression performed poorly (0.778 and 0.707 ROC AUC respectively), likely because they struggle with the high-cardinality ordinal features and non-linear decision boundaries.
-- The dataset is large (3.1M rows), but XGBoost and LightGBM remained fast enough for full evaluation, unlike the insurance cross-sell competition where most models had to be excluded.
+- The dataset is large (3.1M rows), but most models remained fast enough for full evaluation due to the efficiency of tree-based methods on tabular data.

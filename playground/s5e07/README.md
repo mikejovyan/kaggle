@@ -2,7 +2,7 @@
 
 **Competition:** [Predict the Introverts from the Extroverts](https://www.kaggle.com/competitions/playground-series-s5e7)
 
-A binary classification project predicting personality type (Introvert or Extrovert) from behavioural survey data. Submissions are evaluated on classification accuracy.
+A binary classification project predicting personality type (Introvert or Extrovert) from behavioural survey data. Submissions are evaluated using accuracy score between the predicted value and the observed target `Personality`.
 
 ## Dataset
 
@@ -11,11 +11,11 @@ kaggle competitions download -c playground-series-s5e7
 ```
 
 - Training samples: 18,524
-- Features: 7 total (excluding target)
+- Target classes: 0/Introvert (26%), 1/Extrovert (74%)
+- Features: 7 total
   - Numerical: 5 (`Friends_circle_size`, `Going_outside`, `Post_frequency`, `Social_event_attendance`, `Time_spent_Alone`)
-  - Categorical: 2 (`Drained_after_socializing`, `Stage_fear`)
-- Missing values present in all feature columns (1,054–1,893 missing per column)
-- Target classes: 0/Introvert (26.0%), 1/Extrovert (74.0%)
+  - Nominal: 2 (`Drained_after_socializing`, `Stage_fear`)
+- Missing values: present in all 7 features (1,054–1,893 missing per feature)
 
 ## Results
 
@@ -23,22 +23,22 @@ The Kaggle submission achieved a private score of `0.968825`, compared to the [l
 
 Local test results show limited resolution for distinguishing models — many are tied at 3–4 decimal places due to the discrete nature of accuracy on a fixed holdout; the Kaggle private score is the more meaningful measure of model performance.
 
-Models ranked by test accuracy (80/20 stratified split):
+Models ranked by test accuracy (80/20 train-test split):
 
-| Model | Accuracy | Balanced accuracy | MCC | ROC AUC | Train time (s) |
-|-------|----------|-------------------|-----|---------|----------------|
-| SVC | 0.969 | 0.956 | 0.918 | 0.967 | 19.5 |
-| AdaBoost | 0.969 | 0.956 | 0.918 | 0.965 | 0.8 |
-| Logistic Regression | 0.968 | 0.956 | 0.917 | 0.958 | 0.5 |
-| Gradient Boosting | 0.968 | 0.956 | 0.917 | 0.966 | 2.4 |
-| Gradient Boosting (Tuned) | 0.968 | 0.956 | 0.917 | 0.966 | 274.5 |
-| LightGBM | 0.968 | 0.955 | 0.916 | 0.965 | 0.4 |
-| CatBoost | 0.968 | 0.956 | 0.916 | 0.966 | 9.3 |
-| XGBoost | 0.966 | 0.952 | 0.911 | 0.965 | 0.4 |
-| Random Forest | 0.964 | 0.951 | 0.906 | 0.961 | 2.4 |
-| Decision Tree | 0.936 | 0.915 | 0.831 | 0.916 | 0.2 |
+| Model | Accuracy | Train time (s) |
+|-------|----------|----------------|
+| SVC | 0.969 | 19.5 |
+| AdaBoost | 0.969 | 0.8 |
+| Logistic Regression | 0.968 | 0.5 |
+| Gradient Boosting | 0.968 | 2.4 |
+| Gradient Boosting (Tuned) | 0.968 | 274.5 |
+| LightGBM | 0.968 | 0.4 |
+| CatBoost | 0.968 | 9.3 |
+| XGBoost | 0.966 | 0.4 |
+| Random Forest | 0.964 | 2.4 |
+| Decision Tree | 0.936 | 0.2 |
 
-**Best model configuration (Gradient Boosting, tuned with Optuna):**
+**Best model configuration (Gradient Boosting):**
 - `n_estimators`: 431
 - `learning_rate`: 0.03515
 - `max_depth`: 3

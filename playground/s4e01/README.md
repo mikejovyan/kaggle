@@ -11,12 +11,13 @@ kaggle competitions download -c playground-series-s4e1
 ```
 
 - Training samples: 165,034
-- Features: 12 total (excluding target)
-  - Numerical: 4 features
-  - Nominal: 1 feature
-  - Ordinal: 5 features
-  - High cardinality: 2 features
-- Target classes: Not Exited (78.8%), Exited (21.2%)
+- Target classes: 0/Not Exited (79%), 1/Exited (21%)
+- Features: 12 total
+  - Numerical: 4 (`Age`, `Balance`, `CreditScore`, `EstimatedSalary`)
+  - Nominal: 1 (`Geography`)
+  - Ordinal: 5 (`Gender`, `HasCrCard`, `IsActiveMember`, `NumOfProducts`, `Tenure`)
+  - High-cardinality: 2 (`CustomerId`, `Surname`)
+- Missing values: none
 
 ## Results
 
@@ -37,7 +38,7 @@ Models ranked by test ROC AUC (80/20 train-test split):
 | Decision Tree | 0.709 | 5.2 |
 | SVC | Too slow | - |
 
-**Best model configuration (LightGBM Tuned):**
+**Best model configuration (LightGBM):**
 - `n_estimators`: 865
 - `learning_rate`: 0.01502
 - `num_leaves`: 40
@@ -51,5 +52,5 @@ Models ranked by test ROC AUC (80/20 train-test split):
 
 - Gradient boosting algorithms (LightGBM, CatBoost, GB, XGBoost) dominated, all achieving ROC AUC above 0.892
 - Default LightGBM matched the tuned model (0.896 ROC AUC) at a fraction of the training time (3.8s vs 1689.3s)
-- SVC was excluded from full evaluation due to excessive training time on this dataset size
+
 - Submission uses predicted churn probabilities (`predict_proba`) rather than class labels, as required by the competition

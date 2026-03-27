@@ -2,7 +2,7 @@
 
 **Competition:** [Binary Prediction of Smoker Status using Bio-Signals](https://www.kaggle.com/competitions/playground-series-s3e24)
 
-A binary classification project predicting whether a patient is a smoker based on bio-signal data. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
+A binary classification project predicting whether a patient is a smoker based on bio-signal data. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target `smoking`.
 
 ## Dataset
 
@@ -11,10 +11,11 @@ kaggle competitions download -c playground-series-s3e24
 ```
 
 - Training samples: 159,256
-- Features: 22 total (excluding target)
-  - Numerical: 18 features
-  - Ordinal: 4 features
-- Target classes: 0/Not smoker (56.3%), 1/Smoker (43.7%)
+- Target classes: 0/Not smoker (56%), 1/Smoker (44%)
+- Features: 22 total
+  - Numerical: 18 (`age`, `ALT`, `AST`, `Cholesterol`, `eyesight(left)`, `eyesight(right)`, `fasting blood sugar`, `Gtp`, `HDL`, `height(cm)`, `hemoglobin`, `LDL`, `relaxation`, `serum creatinine`, `systolic`, `triglyceride`, `waist(cm)`, `weight(kg)`)
+  - Ordinal: 4 (`dental caries`, `hearing(left)`, `hearing(right)`, `Urine protein`)
+- Missing values: none
 
 ## Results
 
@@ -34,7 +35,7 @@ Models ranked by test ROC AUC (80/20 train-test split):
 | Logistic Regression | 0.832 | 3.7 |
 | Decision Tree | 0.689 | 6.2 |
 
-**Best model configuration (LightGBM tuned):**
+**Best model configuration (LightGBM):**
 - `n_estimators`: 783
 - `num_leaves`: 54
 - `learning_rate`: 0.06318

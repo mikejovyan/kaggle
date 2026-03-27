@@ -2,7 +2,7 @@
 
 **Competition:** [Steel Plate Defect Prediction](https://www.kaggle.com/competitions/playground-series-s4e3)
 
-A multi-class classification project predicting the type of fault on a steel plate. Submissions are evaluated on area under the ROC curve (OvR, weighted) across 7 fault classes: Pastry, Z_Scratch, K_Scatch, Stains, Dirtiness, Bumps, Other_Faults.
+A multi-class classification project predicting the type of fault on a steel plate. Submissions are evaluated using the mean ROC AUC across 7 fault categories (`Pastry`, `Z_Scratch`, `K_Scatch`, `Stains`, `Dirtiness`, `Bumps`, `Other_Faults`), with one AUC computed per category and then averaged.
 
 ## Dataset
 
@@ -11,10 +11,11 @@ kaggle competitions download -c playground-series-s4e3
 ```
 
 - Training samples: 19,219
-- Features: 27 total (excluding target columns)
-  - Numerical: 24 features
-  - Ordinal: 3 features
-- Target classes: Other_Faults (34.0%), Bumps (24.8%), K_Scatch (17.9%), Pastry (7.6%), Z_Scratch (6.0%), No_Defect (4.3%), Stains (3.0%), Dirtiness (2.5%)
+- Target classes: Other_Faults (34%), Bumps (25%), K_Scatch (18%), Pastry (8%), Z_Scratch (6%), No_Defect (4%), Stains (3%), Dirtiness (3%)
+- Features: 27 total
+  - Numerical: 24 (`Edges_Index`, `Edges_X_Index`, `Edges_Y_Index`, `Empty_Index`, `Length_of_Conveyer`, `Log_X_Index`, `Log_Y_Index`, `LogOfAreas`, `Luminosity_Index`, `Maximum_of_Luminosity`, `Minimum_of_Luminosity`, `Orientation_Index`, `Outside_X_Index`, `Pixels_Areas`, `SigmoidOfAreas`, `Square_Index`, `Steel_Plate_Thickness`, `Sum_of_Luminosity`, `X_Maximum`, `X_Minimum`, `X_Perimeter`, `Y_Maximum`, `Y_Minimum`, `Y_Perimeter`)
+  - Ordinal: 3 (`Outside_Global_Index`, `TypeOfSteel_A300`, `TypeOfSteel_A400`)
+- Missing values: none
 
 ## Results
 
@@ -50,4 +51,4 @@ Models ranked by test ROC AUC (80/20 train-test split):
 - Tuning XGBoost improved ROC AUC from 0.805 to 0.822, a meaningful gain on this smaller dataset
 - 21 rows had multiple defects; these were resolved by assigning K_Scatch as the primary class
 - Target is heavily imbalanced (Other_Faults 34% vs Dirtiness 2.5%), though boosting methods handled this well without resampling
-- SVC was excluded from full evaluation due to excessive training time on this dataset size
+
