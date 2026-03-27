@@ -52,7 +52,7 @@
 | [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | [Binary Classification with a Bank Dataset](playground/s5e08/) | Classification |
 | [s5e9](https://www.kaggle.com/competitions/playground-series-s5e9) | Predicting the Beats-per-Minute of Songs | Regression |
 | [s5e10](https://www.kaggle.com/competitions/playground-series-s5e10) | Predicting Road Accident Risk | Regression |
-| [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | Predicting Loan Payback | Classification |
+| [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | [Predicting Loan Payback](playground/s5e11/) | Classification |
 | [s5e12](https://www.kaggle.com/competitions/playground-series-s5e12) | Diabetes Prediction Challenge | Classification |
 | [s6e1](https://www.kaggle.com/competitions/playground-series-s6e1) | Predicting Student Test Scores | Regression |
 | [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](playground/s6e02/) | Classification |
