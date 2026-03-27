@@ -2,7 +2,7 @@
 
 **Competition:** [Classification with an Academic Success Dataset](https://www.kaggle.com/competitions/playground-series-s4e6)
 
-A multi-class classification project predicting student academic outcomes (Dropout, Enrolled, or Graduate). Submissions are evaluated using the accuracy score against the observed target `Target`.
+A multi-class classification project predicting student academic outcomes (Dropout, Enrolled, or Graduate). Submissions are evaluated using accuracy score between the predicted value and the observed target `Target`.
 
 ## Dataset
 
@@ -11,11 +11,13 @@ kaggle competitions download -c playground-series-s4e6
 ```
 
 - Training samples: 76,518
+- Target classes: Dropout (33%), Graduate (47%), Enrolled (20%)
 - Features: 36 total
-  - Numerical: 18 features
-  - Nominal: 2 features
-  - Ordinal: 16 features
-- Target classes: Dropout (33.1%), Graduate (47.4%), Enrolled (19.5%)
+  - Numerical: 18 (`Admission grade`, `Age at enrollment`, `Curricular units 1st sem (approved)`, `Curricular units 1st sem (credited)`, `Curricular units 1st sem (enrolled)`, `Curricular units 1st sem (evaluations)`, `Curricular units 1st sem (grade)`, `Curricular units 1st sem (without evaluations)`, `Curricular units 2nd sem (approved)`, `Curricular units 2nd sem (credited)`, `Curricular units 2nd sem (enrolled)`, `Curricular units 2nd sem (evaluations)`, `Curricular units 2nd sem (grade)`, `Curricular units 2nd sem (without evaluations)`, `GDP`, `Inflation rate`, `Previous qualification (grade)`, `Unemployment rate`)
+  - Nominal: 2 (`Application order`, `Marital status`)
+  - Ordinal: 8 (`Daytime/evening attendance`, `Debtor`, `Displaced`, `Educational special needs`, `Gender`, `International`, `Scholarship holder`, `Tuition fees up to date`)
+  - High-cardinality: 8 (`Application mode`, `Course`, `Father's occupation`, `Father's qualification`, `Mother's occupation`, `Mother's qualification`, `Nacionality`, `Previous qualification`)
+- Missing values: none
 
 ## Results
 
@@ -51,4 +53,4 @@ Models ranked by test accuracy (80/20 train-test split):
 - Gradient boosting algorithms (CatBoost, LightGBM, XGBoost, GB) significantly outperformed other methods
 - Default LightGBM achieved 83.4% accuracy with minimal training time (4.9s)
 - Optuna-tuned LightGBM outperformed CatBoost (83.5% vs 83.3% accuracy) at a much higher time cost (1190s vs 57s)
-- SVC was excluded from full evaluation due to excessive training time on this dataset size
+

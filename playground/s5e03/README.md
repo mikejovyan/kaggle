@@ -10,10 +10,11 @@ A binary classification project predicting whether rainfall will occur on a give
 kaggle competitions download -c playground-series-s5e3
 ```
 
-- Training samples: 1,825 (temporal split; final year used as test set)
-- Features: 11 total (excluding target)
-  - Numerical: 11 features
-- Target classes: 0/No rainfall (24.7%), 1/Rainfall (75.3%)
+- Training samples: 1,825
+- Target classes: 0/No rainfall (25%), 1/Rainfall (75%)
+- Features: 11 total
+  - Numerical: 11 (`cloud`, `day`, `dewpoint`, `humidity`, `maxtemp`, `mintemp`, `pressure`, `sunshine`, `temparature`, `winddirection`, `windspeed`)
+- Missing values: none
 
 ## Results
 
@@ -34,7 +35,7 @@ Models ranked by test ROC AUC (temporal split — last year held out):
 | SVC | 0.839 | 1.0 |
 | Decision Tree | 0.760 | 0.1 |
 
-**Best model configuration (CatBoost, tuned with Optuna):**
+**Best model configuration (CatBoost):**
 - `iterations`: 946
 - `depth`: 3
 - `learning_rate`: 0.01147

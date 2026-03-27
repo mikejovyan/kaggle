@@ -2,7 +2,7 @@
 
 **Competition:** [Multi-Class Prediction of Obesity Risk](https://www.kaggle.com/competitions/playground-series-s4e2)
 
-A multi-class classification project predicting obesity risk levels based on eating habits and physical condition. Submissions are evaluated using the accuracy score against the observed target `NObeyesdad`.
+A multi-class classification project predicting obesity risk levels based on eating habits and physical condition. Submissions are evaluated using accuracy score between the predicted value and the observed target `NObeyesdad`.
 
 ## Dataset
 
@@ -11,11 +11,12 @@ kaggle competitions download -c playground-series-s4e2
 ```
 
 - Training samples: 20,758
-- Features: 16 total (excluding target)
-  - Numerical: 8 features
-  - Nominal: 1 feature
-  - Ordinal: 7 features
-- Target classes: 7 (Insufficient Weight, Normal Weight, Overweight Level I/II, Obesity Type I/II/III), roughly balanced (~11–19% each)
+- Target classes: Obesity_Type_III (19%), Obesity_Type_II (16%), Normal_Weight (15%), Obesity_Type_I (14%), Insufficient_Weight (12%), Overweight_Level_II (12%), Overweight_Level_I (12%)
+- Features: 16 total
+  - Numerical: 8 (`Age`, `CH2O`, `FAF`, `FCVC`, `Height`, `NCP`, `TUE`, `Weight`)
+  - Nominal: 1 (`MTRANS`)
+  - Ordinal: 7 (`CAEC`, `CALC`, `family_history_with_overweight`, `FAVC`, `Gender`, `SCC`, `SMOKE`)
+- Missing values: none
 
 ## Results
 
@@ -50,5 +51,5 @@ Models ranked by test accuracy (80/20 train-test split):
 - LightGBM achieved the highest default accuracy (0.906) and improved marginally with tuning (0.908) at a significant time cost (3.4s vs 1469.4s)
 - Gradient Boosting matched LightGBM (0.905) with far less tuning effort
 - Tree-based ensemble methods (LightGBM, GB, LGBMClassifier, CatBoost, XGBoost) all performed similarly, clustered between 0.900–0.908
-- No missing values in the dataset; train and test distributions are statistically indistinguishable (validation score 0.50)
+- Train and test distributions are statistically indistinguishable (validation score 0.50)
 - The 7-class target is roughly balanced, making accuracy a reliable evaluation metric

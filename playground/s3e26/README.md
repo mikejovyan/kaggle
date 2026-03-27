@@ -2,7 +2,7 @@
 
 **Competition:** [Multi-Class Prediction of Cirrhosis Outcomes](https://www.kaggle.com/competitions/playground-series-s3e26)
 
-A multi-class classification project predicting cirrhosis patient outcomes (C, CL, or D). Submissions are evaluated using the multi-class logarithmic loss against the observed target `Status`.
+A multi-class classification project predicting cirrhosis patient outcomes (C, CL, or D). Submissions are evaluated using multi-class logarithmic loss between the predicted probability and the observed target `Status`.
 
 ## Dataset
 
@@ -11,11 +11,12 @@ kaggle competitions download -c playground-series-s3e26
 ```
 
 - Training samples: 7,905
+- Target classes: Status_C (63%), Status_D (34%), Status_CL (4%)
 - Features: 18 total
-  - Numerical: 11 features
-  - Nominal: 2 features
-  - Ordinal: 5 features
-- Target classes: Status_C (62.8%), Status_D (33.7%), Status_CL (3.5%)
+  - Numerical: 11 (`Age`, `Albumin`, `Alk_Phos`, `Bilirubin`, `Cholesterol`, `Copper`, `N_Days`, `Platelets`, `Prothrombin`, `SGOT`, `Tryglicerides`)
+  - Nominal: 2 (`Edema`, `Stage`)
+  - Ordinal: 5 (`Ascites`, `Drug`, `Hepatomegaly`, `Sex`, `Spiders`)
+- Missing values: none
 
 ## Results
 

@@ -2,7 +2,7 @@
 
 **Competition:** [Predict Health Outcomes of Horses](https://www.kaggle.com/competitions/playground-series-s3e22)
 
-A multi-class classification project predicting horse health outcomes (lived, died, or euthanized). Submissions are evaluated using the micro-averaged F1 score against the observed target `outcome`.
+A multi-class classification project predicting horse health outcomes (lived, died, or euthanized). Submissions are evaluated using micro-averaged F1 score between the predicted value and the observed target `outcome`.
 
 ## Dataset
 
@@ -11,11 +11,12 @@ kaggle competitions download -c playground-series-s3e22
 ```
 
 - Training samples: 1,235
-- Features: 26 total (excluding target)
-  - Numerical: 9 features
-  - Nominal: 3 features
-  - Ordinal: 13 features (excluding lesion_2 and lesion_3 which were dropped)
-- Target classes: Lived (46.5%), Died (33.2%), Euthanized (20.3%)
+- Target classes: Lived (47%), Died (33%), Euthanized (20%)
+- Features: 26 total
+  - Numerical: 9 (`abdomo_protein`, `hospital_number`, `lesion_1`, `nasogastric_reflux_ph`, `packed_cell_volume`, `pulse`, `rectal_temp`, `respiratory_rate`, `total_protein`)
+  - Nominal: 3 (`abdomen`, `abdomo_appearance`, `mucous_membrane`)
+  - Ordinal: 13 (`abdominal_distention`, `age`, `capillary_refill_time`, `cp_data`, `nasogastric_reflux`, `nasogastric_tube`, `pain`, `peripheral_pulse`, `peristalsis`, `rectal_exam_feces`, `surgery`, `surgical_lesion`, `temp_of_extremities`; excluding `lesion_2` and `lesion_3` which were dropped)
+- Missing values: present in 12 features (up to 213 missing per feature)
 
 ## Results
 
@@ -47,6 +48,6 @@ Models ranked by test F1-micro (80/20 train-test split):
 ## Key findings
 
 - Default Gradient Boosting outperformed its tuned counterpart (0.733 vs 0.729), likely due to the very small dataset size making hyperparameter tuning unreliable
-- Random Forest was competitive with minimal training time (0.960s)
+- Random Forest was competitive with minimal training time (1.0s)
 - SVC completed evaluation on this small dataset but performed poorly (0.490), struggling with the multi-class imbalance
 - The dataset is very small (1,235 samples), which limits model generalisation and makes tuning less effective

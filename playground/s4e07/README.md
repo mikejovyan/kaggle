@@ -2,7 +2,7 @@
 
 **Competition:** [Binary Classification of Insurance Cross Selling](https://www.kaggle.com/competitions/playground-series-s4e7)
 
-A binary classification project predicting whether a health insurance customer would respond negatively or positively to  in vehicle insurance, based on demographic and vehicle data. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
+A binary classification project predicting whether a health insurance customer would respond negatively or positively to  in vehicle insurance, based on demographic and vehicle data. Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target `Response`.
 
 ## Dataset
 
@@ -11,11 +11,12 @@ kaggle competitions download -c playground-series-s4e7
 ```
 
 - Training samples: 11,504,798
-- Features: 10 total (excluding target)
-  - Numerical: 3 features (Age, Annual_Premium, Vintage)
-  - Ordinal: 5 features (Driving_License, Gender, Previously_Insured, Vehicle_Age, Vehicle_Damage)
-  - High-cardinality categorical: 2 features (Region_Code, Policy_Sales_Channel)
-- Target classes: 0/Negative response (87.7%), 1/Positive response (12.3%)
+- Target classes: 0/Negative response (88%), 1/Positive response (12%)
+- Features: 10 total
+  - Numerical: 3 (`Age`, `Annual_Premium`, `Vintage`)
+  - Ordinal: 5 (`Driving_License`, `Gender`, `Previously_Insured`, `Vehicle_Age`, `Vehicle_Damage`)
+  - High-cardinality: 2 (`Region_Code`, `Policy_Sales_Channel`)
+- Missing values: none
 
 ## Results
 
@@ -28,8 +29,15 @@ Models ranked by test ROC AUC (80/20 train-test split):
 | LightGBM (Tuned) | 0.880 | 2859.2 |
 | XGBoost | 0.878 | 107.0 |
 | LightGBM | 0.876 | 137.2 |
+| Gradient Boosting | Too slow | - |
+| Random Forest | Too slow | - |
+| CatBoost | Too slow | - |
+| AdaBoost | Too slow | - |
+| Logistic Regression | Too slow | - |
+| SVC | Too slow | - |
+| Decision Tree | Too slow | - |
 
-**Best model configuration (LightGBM tuned):**
+**Best model configuration (LightGBM):**
 - `n_estimators`: 437
 - `num_leaves`: 124
 - `learning_rate`: 0.06505
@@ -41,7 +49,7 @@ Models ranked by test ROC AUC (80/20 train-test split):
 
 ## Key findings
 
-- At over 11.5 million training rows, this is by far the largest dataset in the series. The sheer size means most models (Logistic Regression, SVC, Random Forest, Decision Tree, Gradient Boosting, AdaBoost, CatBoost) were too slow to run and were excluded. Only XGBoost and LightGBM completed in a reasonable time, with even the Optuna tuning step taking nearly 48 minutes per trial. The submission file is not tracked in this repo due to its size (218 MB) — see [.gitignore](../../.gitignore#L43).
+- At over 11.5 million training rows, this is by far the largest dataset in the series — only XGBoost and LightGBM completed in a reasonable time, with even the Optuna tuning step taking nearly 48 minutes per trial.
 - The dataset is heavily imbalanced (87.7% class 0), which is reflected in the low balanced accuracy scores (0.53–0.55) despite high overall accuracy (~0.880).
 - Tuning LightGBM with just 5 Optuna trials improved ROC AUC from 0.876 to 0.880 at the cost of 47 minutes of training time (vs ~2 minutes untuned).
 - XGBoost matched LightGBM base performance (0.878) and was faster to train (107s vs 137s).

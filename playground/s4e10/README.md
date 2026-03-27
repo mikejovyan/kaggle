@@ -11,11 +11,12 @@ kaggle competitions download -c playground-series-s4e10
 ```
 
 - Training samples: 58,645
-- Features: 11 total (excluding target)
-  - Numerical: 7 features
-  - Nominal: 2 features
-  - Ordinal: 2 features
-- Target classes: 0/Not Approved (85.8%), 1/Approved (14.2%)
+- Target classes: 0/Not Approved (86%), 1/Approved (14%)
+- Features: 11 total
+  - Numerical: 7 (`cb_person_cred_hist_length`, `loan_amnt`, `loan_int_rate`, `loan_percent_income`, `person_age`, `person_emp_length`, `person_income`)
+  - Nominal: 2 (`loan_intent`, `person_home_ownership`)
+  - Ordinal: 2 (`cb_person_default_on_file`, `loan_grade`)
+- Missing values: none
 
 ## Results
 

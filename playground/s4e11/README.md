@@ -2,7 +2,7 @@
 
 **Competition:** [Exploring Mental Health Data](https://www.kaggle.com/competitions/playground-series-s4e11)
 
-A binary classification project predicting whether an individual has depression. Submissions are evaluated using the accuracy score against the observed target `Depression`.
+A binary classification project predicting whether an individual has depression. Submissions are evaluated using accuracy score between the predicted value and the observed target `Depression`.
 
 ## Dataset
 
@@ -11,11 +11,12 @@ kaggle competitions download -c playground-series-s4e11
 ```
 
 - Training samples: 140,700
-- Features: 18 total (excluding target)
-  - Numerical: 3 features
-  - Ordinal: 11 features
-  - High cardinality: 4 features
-- Target classes: 0/Not Depressed (81.8%), 1/Depressed (18.2%)
+- Target classes: 0/Not Depressed (82%), 1/Depressed (18%)
+- Features: 18 total
+  - Numerical: 3 (`Age`, `CGPA`, `Work/Study Hours`)
+  - Ordinal: 11 (`Academic Pressure`, `Dietary Habits`, `Family History of Mental Illness`, `Financial Stress`, `Gender`, `Have you ever had suicidal thoughts ?`, `Job Satisfaction`, `Sleep Duration`, `Study Satisfaction`, `Work Pressure`, `Working Professional or Student`)
+  - High-cardinality: 4 (`City`, `Degree`, `Name`, `Profession`)
+- Missing values: present in 9 features (up to 112,803 missing per feature)
 
 ## Results
 
@@ -49,4 +50,4 @@ Models ranked by test accuracy (80/20 train-test split):
 - Tuning provided no accuracy gain over default CatBoost at a significant time cost (39.6s vs 1214.8s)
 - XGBoost, LightGBM, and Gradient Boosting all tied at 0.938 accuracy
 - The dataset has substantial missing values across several features, particularly for student/professional-specific columns
-- SVC was excluded from full evaluation due to excessive training time on this dataset size
+

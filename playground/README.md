@@ -36,6 +36,8 @@
 
 Model abbreviations: GB = Gradient Boosting, LGBM = LightGBM, XGB = XGBoost, CB = CatBoost
 
+Kaggle scores are shown to 6 decimal places; Kaggle reports either 5 or 6 decimal places depending on the competition.
+
 ## Regression
 
 | Episode | Title | Metric | Best model | My score | Top score |

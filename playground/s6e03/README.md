@@ -11,11 +11,12 @@ kaggle competitions download -c playground-series-s6e3
 ```
 
 - Training samples: 594,194
-- Features: 19 total (excluding target)
-  - Numerical: 3 features
-  - Nominal: 2 features
-  - Ordinal: 14 features
-- Target classes: 0/Not churned (77.5%), 1/Churned (22.5%)
+- Target classes: 0/Not churned (78%), 1/Churned (22%)
+- Features: 19 total
+  - Numerical: 3 (`MonthlyCharges`, `tenure`, `TotalCharges`)
+  - Nominal: 2 (`InternetService`, `PaymentMethod`)
+  - Ordinal: 14 (`Contract`, `Dependents`, `DeviceProtection`, `gender`, `MultipleLines`, `OnlineBackup`, `OnlineSecurity`, `PaperlessBilling`, `Partner`, `PhoneService`, `SeniorCitizen`, `StreamingMovies`, `StreamingTV`, `TechSupport`)
+- Missing values: none
 
 ## Results
 
@@ -52,4 +53,4 @@ Models ranked by test ROC AUC (80/20 train-test split):
 - Default CatBoost matched tuned LightGBM (0.917 ROC AUC) at a fraction of the tuning time (131s vs 1421s)
 - Random Forest underperformed relative to other ensemble methods (0.895 vs 0.914+)
 - Dataset is heavily imbalanced (77.5% not churned vs 22.5% churned), though boosting methods handled this well without resampling
-- SVC was excluded from full evaluation due to excessive training time on this dataset size
+
