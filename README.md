@@ -26,7 +26,7 @@
 | [s3e20](https://www.kaggle.com/competitions/playground-series-s3e20) | Predict CO2 Emissions in Rwanda | Regression |
 | [s3e21](https://www.kaggle.com/competitions/playground-series-s3e21) | Improve a Fixed Model the Data-Centric Way! | Other |
 | [s3e22](https://www.kaggle.com/competitions/playground-series-s3e22) | [Predict Health Outcomes of Horses](playground/s3e22/) | Classification |
-| [s3e23](https://www.kaggle.com/competitions/playground-series-s3e23) | Binary Classification with a Software Defects Dataset | Classification |
+| [s3e23](https://www.kaggle.com/competitions/playground-series-s3e23) | Binary Classification with a Software Defects Dataset* | Classification |
 | [s3e24](https://www.kaggle.com/competitions/playground-series-s3e24) | [Binary Prediction of Smoker Status using Bio-Signals](playground/s3e24/) | Classification |
 | [s3e25](https://www.kaggle.com/competitions/playground-series-s3e25) | Regression with a Mohs Hardness Dataset | Regression |
 | [s3e26](https://www.kaggle.com/competitions/playground-series-s3e26) | [Multi-Class Prediction of Cirrhosis Outcomes](playground/s3e26/) | Classification |

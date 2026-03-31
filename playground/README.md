@@ -2,7 +2,7 @@
 
 ## Classification
 
-| Episode | Title | Metric | Best model | My score | Top score |
+| Episode | Title | Metric | Model | My score | LB score |
 |---------|-------|--------|------------|----------|-----------|
 | [s3e2](https://www.kaggle.com/competitions/playground-series-s3e2) | Binary Classification with a Tabular Stroke Prediction Dataset | | | | |
 | [s3e3](https://www.kaggle.com/competitions/playground-series-s3e3) | Binary Classification with a Tabular Employee Attrition Dataset | | | | |
@@ -14,7 +14,7 @@
 | [s3e17](https://www.kaggle.com/competitions/playground-series-s3e17) | Binary Classification of Machine Failures | | | | |
 | [s3e18](https://www.kaggle.com/competitions/playground-series-s3e18) | Explore Multi-Label Classification with an Enzyme Substrate Dataset | | | | |
 | [s3e22](https://www.kaggle.com/competitions/playground-series-s3e22) | [Predict Health Outcomes of Horses](s3e22/) | F1-micro | GB | 0.742420 | 0.781810 |
-| [s3e23](https://www.kaggle.com/competitions/playground-series-s3e23) | Binary Classification with a Software Defects Dataset | | | | |
+| [s3e23](https://www.kaggle.com/competitions/playground-series-s3e23) | Binary Classification with a Software Defects Dataset* | — | — | — | — |
 | [s3e24](https://www.kaggle.com/competitions/playground-series-s3e24) | [Binary Prediction of Smoker Status using Bio-Signals](s3e24/) | ROC | LGBM | 0.872220 | 0.879460 |
 | [s3e26](https://www.kaggle.com/competitions/playground-series-s3e26) | [Multi-Class Prediction of Cirrhosis Outcomes](s3e26/) | Log loss | GB | 0.427040 | 0.391040 |
 | [s4e1](https://www.kaggle.com/competitions/playground-series-s4e1) | [Binary Classification with a Bank Churn Dataset](s4e01/) | ROC | LGBM | 0.892950 | 0.905850 |
@@ -36,7 +36,9 @@
 
 Model abbreviations: GB = Gradient Boosting, LGBM = LightGBM, XGB = XGBoost, CB = CatBoost
 
-Kaggle scores are shown to 6 decimal places; Kaggle reports either 5 or 6 decimal places depending on the competition.
+Kaggle scores are shown to 6 decimal places
+
+\* Competition closed.
 
 ## Regression
 
