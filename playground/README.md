@@ -26,7 +26,7 @@
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](s4e10/) | ROC | LGBM | 0.960380 | 0.969380 |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](s4e11/) | Accuracy | CB | 0.940230 | 0.941840 |
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](s5e03/) | ROC | CB | 0.903350 | 0.906540 |
-| [s5e6](https://www.kaggle.com/competitions/playground-series-s5e6) | Predicting Optimal Fertilizers | | | | |
+| [s5e6](https://www.kaggle.com/competitions/playground-series-s5e6) | [Predicting Optimal Fertilizers](s5e06/) | MAP@3 | XGB | 0.345890 | 0.386520 |
 | [s5e7](https://www.kaggle.com/competitions/playground-series-s5e7) | [Predict the Introverts from the Extroverts](s5e07/) | Accuracy | GB | 0.968825 | 0.970647 |
 | [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | [Binary Classification with a Bank Dataset](s5e08/) | ROC | LGBM | 0.967870 | 0.978010 |
 | [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | [Predicting Loan Payback](s5e11/) | ROC | LGBM | 0.923920 | 0.929390 |
