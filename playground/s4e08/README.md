@@ -32,9 +32,9 @@ Models ranked by test ROC AUC (80/20 train-test split):
 | Random Forest | 0.996 | 1469.8 |
 | LightGBM | 0.996 | 54.9 |
 | Decision Tree | 0.983 | 100.5 |
+| Gradient Boosting | 0.980 | 1675.9 |
 | AdaBoost | 0.778 | 300.3 |
 | Logistic Regression | 0.707 | 98.2 |
-| Gradient Boosting | Too slow | - |
 | SVC | Too slow | - |
 
 **Best model configuration (XGBoost):**
