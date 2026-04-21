@@ -22,18 +22,18 @@
 | [s3e16](https://www.kaggle.com/competitions/playground-series-s3e16) | Regression with a Crab Age Dataset | Regression |
 | [s3e17](https://www.kaggle.com/competitions/playground-series-s3e17) | Binary Classification of Machine Failures | Classification |
 | [s3e18](https://www.kaggle.com/competitions/playground-series-s3e18) | Explore Multi-Label Classification with an Enzyme Substrate Dataset | Classification |
-| [s3e19](https://www.kaggle.com/competitions/playground-series-s3e19) | Forecasting Mini-Course Sales | Forecasting |
+| [s3e19](https://www.kaggle.com/competitions/playground-series-s3e19) | Forecasting Mini-Course Sales | Regression |
 | [s3e20](https://www.kaggle.com/competitions/playground-series-s3e20) | Predict CO2 Emissions in Rwanda | Regression |
-| [s3e21](https://www.kaggle.com/competitions/playground-series-s3e21) | Improve a Fixed Model the Data-Centric Way! | Other |
+| [s3e21](https://www.kaggle.com/competitions/playground-series-s3e21) | Improve a Fixed Model the Data-Centric Way! | Regression |
 | [s3e22](https://www.kaggle.com/competitions/playground-series-s3e22) | [Predict Health Outcomes of Horses](playground/s3e22/) | Classification |
-| [s3e23](https://www.kaggle.com/competitions/playground-series-s3e23) | Binary Classification with a Software Defects Dataset* | Classification |
+| [s3e23](https://www.kaggle.com/competitions/playground-series-s3e23) | Binary Classification with a Software Defects Dataset | Classification |
 | [s3e24](https://www.kaggle.com/competitions/playground-series-s3e24) | [Binary Prediction of Smoker Status using Bio-Signals](playground/s3e24/) | Classification |
 | [s3e25](https://www.kaggle.com/competitions/playground-series-s3e25) | Regression with a Mohs Hardness Dataset | Regression |
 | [s3e26](https://www.kaggle.com/competitions/playground-series-s3e26) | [Multi-Class Prediction of Cirrhosis Outcomes](playground/s3e26/) | Classification |
 | [s4e1](https://www.kaggle.com/competitions/playground-series-s4e1) | [Binary Classification with a Bank Churn Dataset](playground/s4e01/) | Classification |
 | [s4e2](https://www.kaggle.com/competitions/playground-series-s4e2) | [Multi-Class Prediction of Obesity Risk](playground/s4e02/) | Classification |
 | [s4e3](https://www.kaggle.com/competitions/playground-series-s4e3) | [Steel Plate Defect Prediction](playground/s4e03/) | Classification |
-| [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | Regression with an Abalone Dataset | Regression |
+| [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | [Regression with an Abalone Dataset](playground/s4e04/) | Regression |
 | [s4e5](https://www.kaggle.com/competitions/playground-series-s4e5) | [Regression with a Flood Prediction Dataset](playground/s4e05/) | Regression |
 | [s4e6](https://www.kaggle.com/competitions/playground-series-s4e6) | [Classification with an Academic Success Dataset](playground/s4e06/) | Classification |
 | [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](playground/s4e07/) | Classification |
@@ -42,7 +42,7 @@
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](playground/s4e10/) | Classification |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](playground/s4e11/) | Classification |
 | [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | [Regression with an Insurance Dataset](playground/s4e12/) | Regression |
-| [s5e1](https://www.kaggle.com/competitions/playground-series-s5e1) | Forecasting Sticker Sales | Forecasting |
+| [s5e1](https://www.kaggle.com/competitions/playground-series-s5e1) | Forecasting Sticker Sales | Regression |
 | [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | [Backpack Prediction Challenge](playground/s5e02/) | Regression |
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](playground/s5e03/) | Classification |
 | [s5e4](https://www.kaggle.com/competitions/playground-series-s5e4) | Predict Podcast Listening Time | Regression |
