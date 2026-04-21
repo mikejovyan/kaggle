@@ -55,8 +55,8 @@ Kaggle scores are shown to 6 decimal places
 | [s3e16](https://www.kaggle.com/competitions/playground-series-s3e16) | Regression with a Crab Age Dataset | | | | |
 | [s3e20](https://www.kaggle.com/competitions/playground-series-s3e20) | Predict CO2 Emissions in Rwanda | | | | |
 | [s3e25](https://www.kaggle.com/competitions/playground-series-s3e25) | Regression with a Mohs Hardness Dataset | | | | |
-| [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | [Regression with an Abalone Dataset](s4e04/) | RMSLE | LGBM | 0.146860 | 0.143740 |
-| [s4e5](https://www.kaggle.com/competitions/playground-series-s4e5) | Regression with a Flood Prediction Dataset | | | | |
+| [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | Regression with an Abalone Dataset | | | | |
+| [s4e5](https://www.kaggle.com/competitions/playground-series-s4e5) | [Regression with a Flood Prediction Dataset](s4e05/) | R² | CB | 0.866950 | 0.869050 |
 | [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | Regression of Used Car Prices | | | | |
 | [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | Regression with an Insurance Dataset | | | | |
 | [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | Backpack Prediction Challenge | | | | |
