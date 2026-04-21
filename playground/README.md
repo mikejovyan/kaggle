@@ -35,7 +35,7 @@
 | [s4e6](https://www.kaggle.com/competitions/playground-series-s4e6) | [Classification with an Academic Success Dataset](s4e06/) | C | Accuracy | LGBM | 0.837340 | 0.840350 |
 | [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](s4e07/) | C | ROC | LGBM | 0.880360 | 0.897540 |
 | [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](s4e08/) | C | ROC | XGB | 0.984540 | 0.985140 |
-| [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | [Regression of Used Car Prices](s4e09/) | R | RMSE | LGBM | 63289.406640 | 62917.059880 |
+| [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | [Regression of Used Car Prices](s4e09/) | R | RMSE | LGBM | 63289.41 | 62917.06 |
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](s4e10/) | C | ROC | LGBM | 0.960380 | 0.969380 |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](s4e11/) | C | Accuracy | CB | 0.940230 | 0.941840 |
 | [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | [Regression with an Insurance Dataset](s4e12/) | R | RMSLE | LGBM | 1.139530 | 1.017060 |
