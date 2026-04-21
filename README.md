@@ -2,7 +2,7 @@
 
 ## Playground Series
 
-| Episode | Title | Type |
+| Episode | Title | Task |
 |---------|-------|------|
 | [s3e1](https://www.kaggle.com/competitions/playground-series-s3e1) | Regression with a Tabular California Housing Dataset | Regression |
 | [s3e2](https://www.kaggle.com/competitions/playground-series-s3e2) | Binary Classification with a Tabular Stroke Prediction Dataset | Classification |
@@ -57,21 +57,3 @@
 | [s6e1](https://www.kaggle.com/competitions/playground-series-s6e1) | Predicting Student Test Scores | Regression |
 | [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](playground/s6e02/) | Classification |
 | [s6e3](https://www.kaggle.com/competitions/playground-series-s6e3) | [Predict Customer Churn](playground/s6e03/) | Classification |
-
-## Commit Convention
-
-```
-<scope>: <verb> <thing>
-```
-
-- **Competition commits**: use the episode ID, e.g. `s3e24: add notebook`
-- **Repo-level commits**: use `repo`, e.g. `repo: add shared utils`
-
-| Verb | When to use |
-|------|-------------|
-| `add` | New file/feature |
-| `update` | Changes to existing work |
-| `fix` | Correct something broken |
-| `tune` | Hyperparameter/model tweaks |
-| `submit` | A Kaggle submission was made |
-| `clean` | Cleanup or refactoring |
