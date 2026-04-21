@@ -43,7 +43,7 @@
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](playground/s4e11/) | Classification |
 | [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | [Regression with an Insurance Dataset](playground/s4e12/) | Regression |
 | [s5e1](https://www.kaggle.com/competitions/playground-series-s5e1) | Forecasting Sticker Sales | Forecasting |
-| [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | Backpack Prediction Challenge | Regression |
+| [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | [Backpack Prediction Challenge](playground/s5e02/) | Regression |
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](playground/s5e03/) | Classification |
 | [s5e4](https://www.kaggle.com/competitions/playground-series-s5e4) | Predict Podcast Listening Time | Regression |
 | [s5e5](https://www.kaggle.com/competitions/playground-series-s5e5) | Predict Calorie Expenditure | Regression |
