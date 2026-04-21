@@ -41,7 +41,7 @@
 | [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | [Regression of Used Car Prices](playground/s4e09/) | Regression |
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](playground/s4e10/) | Classification |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](playground/s4e11/) | Classification |
-| [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | Regression with an Insurance Dataset | Regression |
+| [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | [Regression with an Insurance Dataset](playground/s4e12/) | Regression |
 | [s5e1](https://www.kaggle.com/competitions/playground-series-s5e1) | Forecasting Sticker Sales | Forecasting |
 | [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | Backpack Prediction Challenge | Regression |
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](playground/s5e03/) | Classification |
