@@ -38,7 +38,7 @@
 | [s4e6](https://www.kaggle.com/competitions/playground-series-s4e6) | [Classification with an Academic Success Dataset](playground/s4e06/) | Classification |
 | [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](playground/s4e07/) | Classification |
 | [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](playground/s4e08/) | Classification |
-| [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | Regression of Used Car Prices | Regression |
+| [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | [Regression of Used Car Prices](playground/s4e09/) | Regression |
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](playground/s4e10/) | Classification |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](playground/s4e11/) | Classification |
 | [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | Regression with an Insurance Dataset | Regression |
