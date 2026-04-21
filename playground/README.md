@@ -40,7 +40,7 @@
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](s4e11/) | C | Accuracy | CB | 0.940230 | 0.941840 |
 | [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | [Regression with an Insurance Dataset](s4e12/) | R | RMSLE | LGBM | 1.139530 | 1.017060 |
 | [s5e1](https://www.kaggle.com/competitions/playground-series-s5e1) | Forecasting Sticker Sales | R | | | | |
-| [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | [Backpack Prediction Challenge](s5e02/) | R | RMSE | GB | 38.927900 | 38.616280 |
+| [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | [Backpack Prediction Challenge](s5e02/) | R | RMSE | GB | 38.92790 | 38.61628 |
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](s5e03/) | C | ROC | CB | 0.903350 | 0.906540 |
 | [s5e4](https://www.kaggle.com/competitions/playground-series-s5e4) | Predict Podcast Listening Time | R | | | | |
 | [s5e5](https://www.kaggle.com/competitions/playground-series-s5e5) | Predict Calorie Expenditure | R | | | | |
@@ -57,6 +57,4 @@
 
 Task abbreviations: C = Classification, R = Regression
 
-Model abbreviations: GB = Gradient Boosting, LGBM = LightGBM, XGB = XGBoost, CB = CatBoost
-
-Kaggle scores are shown to 6 decimal places, except s4e9 which is shown to 2
+Model abbreviations: CB = CatBoost, GB = Gradient Boosting, LGBM = LightGBM, XGB = XGBoost
