@@ -33,7 +33,7 @@
 | [s4e1](https://www.kaggle.com/competitions/playground-series-s4e1) | [Binary Classification with a Bank Churn Dataset](playground/s4e01/) | Classification |
 | [s4e2](https://www.kaggle.com/competitions/playground-series-s4e2) | [Multi-Class Prediction of Obesity Risk](playground/s4e02/) | Classification |
 | [s4e3](https://www.kaggle.com/competitions/playground-series-s4e3) | [Steel Plate Defect Prediction](playground/s4e03/) | Classification |
-| [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | Regression with an Abalone Dataset | Regression |
+| [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | [Regression with an Abalone Dataset](playground/s4e04/) | Regression |
 | [s4e5](https://www.kaggle.com/competitions/playground-series-s4e5) | Regression with a Flood Prediction Dataset | Regression |
 | [s4e6](https://www.kaggle.com/competitions/playground-series-s4e6) | [Classification with an Academic Success Dataset](playground/s4e06/) | Classification |
 | [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](playground/s4e07/) | Classification |
