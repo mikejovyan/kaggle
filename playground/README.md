@@ -58,8 +58,8 @@ Kaggle scores are shown to 6 decimal places
 | [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | Regression with an Abalone Dataset | | | | |
 | [s4e5](https://www.kaggle.com/competitions/playground-series-s4e5) | Regression with a Flood Prediction Dataset | | | | |
 | [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | Regression of Used Car Prices | | | | |
-| [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | [Regression with an Insurance Dataset](s4e12/) | RMSLE | LGBM | 1.139530 | 1.017060 |
-| [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | Backpack Prediction Challenge | | | | |
+| [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | Regression with an Insurance Dataset | | | | |
+| [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | [Backpack Prediction Challenge](s5e02/) | RMSE | GB | 38.927900 | 38.616280 |
 | [s5e4](https://www.kaggle.com/competitions/playground-series-s5e4) | Predict Podcast Listening Time | | | | |
 | [s5e5](https://www.kaggle.com/competitions/playground-series-s5e5) | Predict Calorie Expenditure | | | | |
 | [s5e9](https://www.kaggle.com/competitions/playground-series-s5e9) | Predicting the Beats-per-Minute of Songs | | | | |
