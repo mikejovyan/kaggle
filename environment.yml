@@ -5,6 +5,7 @@ dependencies:
   - python=3.12
   - catboost
   - ipykernel
+  - kaggle
   - lightgbm
   - matplotlib
   - numpy
@@ -17,5 +18,3 @@ dependencies:
   - seaborn
   - pip:
     - -e .
-    - kaggle
-    
