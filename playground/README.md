@@ -53,7 +53,7 @@
 | [s5e12](https://www.kaggle.com/competitions/playground-series-s5e12) | [Diabetes Prediction Challenge](s5e12/) | C | ROC | LGBM | 0.695010 | 0.705040 |
 | [s6e1](https://www.kaggle.com/competitions/playground-series-s6e1) | Predicting Student Test Scores | R | | | | |
 | [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](s6e02/) | C | ROC | CB | 0.955150 | 0.955350 |
-| [s6e3](https://www.kaggle.com/competitions/playground-series-s6e3) | [Predict Customer Churn](s6e03/) | C | ROC | LGBM | TBD | TBD |
+| [s6e3](https://www.kaggle.com/competitions/playground-series-s6e3) | [Predict Customer Churn](s6e03/) | C | ROC | LGBM | 0.915010 | 0.918560 |
 | [s6e4](https://www.kaggle.com/competitions/playground-series-s6e4) | [Predicting Irrigation Need](s6e04/) | C | Bal. Acc | LGBM | TBD | TBD |
 
 Task abbreviations: C = Classification, R = Regression
