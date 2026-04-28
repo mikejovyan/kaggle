@@ -57,3 +57,4 @@
 | [s6e1](https://www.kaggle.com/competitions/playground-series-s6e1) | Predicting Student Test Scores | Regression |
 | [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](playground/s6e02/) | Classification |
 | [s6e3](https://www.kaggle.com/competitions/playground-series-s6e3) | [Predict Customer Churn](playground/s6e03/) | Classification |
+| [s6e4](https://www.kaggle.com/competitions/playground-series-s6e4) | [Predicting Irrigation Need](playground/s6e04/) | Classification |
