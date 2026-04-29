@@ -37,7 +37,7 @@ build/
 *.err
 coverage/
 
-# Kaggle datasets (but allow submissions)
+# Kaggle datasets (only submission.csv)
 *.csv
 !submission.csv
-classification/insurance-cross-sell/submission.csv
+s4/e07/submission.csv
