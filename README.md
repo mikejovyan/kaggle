@@ -71,4 +71,6 @@
 
 Task: C = Classification, R = Regression
 
-Model: CB = CatBoost, GB = Gradient Boosting, LGBM = LightGBM, XGB = XGBoost · ↓ = lower is better
+Metric: ↓ = lower is better
+
+Model: CB = CatBoost, GB = Gradient Boosting, LGBM = LightGBM, XGB = XGBoost
