@@ -40,4 +40,4 @@ coverage/
 # Kaggle datasets (only submission.csv)
 *.csv
 !submission.csv
-s4/e07/submission.csv
+data/s4/e07/submission.csv
