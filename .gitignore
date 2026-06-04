@@ -1,41 +1,16 @@
-# Docker artifacts
-*.tar
-*.img
-*.log
-cache/
-tmp/
-
-# Environment files (NEVER commit secrets)
-.conda
-.env
-.env.*
-env/
-
-# Editor/project config
-.vscode/
-.idea/
-*.swp
-*.swo
-.ipynb_checkpoints
-
-# OS junk files
-.DS_Store
-Thumbs.db
-
-# Python (if any containers or scripts use it)
+# Python
 __pycache__/
-*.pyc
-*.egg-info/
+*.py[cod]
+.ipynb_checkpoints/
 
-# Node.js (if any container builds use it)
-node_modules/
+# Package build
+*.egg-info/
 dist/
 build/
 
-# Test and diagnostics output
-*.out
-*.err
-coverage/
+# Virtual environment
+.venv/
+.conda/
 
 # Kaggle datasets (only submission.csv)
 *.csv
