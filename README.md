@@ -1,14 +1,12 @@
-# Kaggle Competitions Portfolio
+# kaggle
 
-**Kaggle profile:** [kaggle.com/mikejovyan](https://www.kaggle.com/mikejovyan)
+[![license](https://img.shields.io/github/license/mikejovyan/kaggle)](LICENSE)
 
-**Stack:** Python 3.12 · pandas · scikit-learn · LightGBM · XGBoost · CatBoost · Optuna
+Kaggle competition solutions. 
 
----
+**Profile:** [kaggle.com/mikejovyan](https://www.kaggle.com/mikejovyan)
 
-## Featured Competitions
-
-<!-- TODO: add 3–5 featured competition write-ups with approach and result summaries -->
+**Stack:** Python · pandas · scikit-learn · LightGBM · XGBoost · CatBoost · Optuna
 
 ## Playground Competitions
 
