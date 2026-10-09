@@ -8,3 +8,7 @@ dist/
 
 # Virtual environment
 .venv/
+
+# Datasets (only allow submission.csv)
+*.csv
+!submission.csv
