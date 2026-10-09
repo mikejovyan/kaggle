@@ -3,7 +3,7 @@ build-backend = "uv_build"
 requires = [ "uv-build" ]
 
 [project]
-name = "package_name"
+name = "kaggle"
 version = "0.1.0"
 license = "GPL-3.0-or-later"
 license-files = ["LICENSE"]
@@ -17,7 +17,7 @@ dev = [
 ]
 
 [tool.uv.build-backend]
-module-name = "package_name"
+module-name = "kaggle"
 module-root = "src"
 
 [tool.ruff.lint]
