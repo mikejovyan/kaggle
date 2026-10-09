@@ -40,7 +40,3 @@ ignore = [
 ]
 [tool.ruff.lint.per-file-ignores]
 "**/__init__.py" = [ "D104" ]
-"tests/**/*.py" = [ "D", "S101" ]
-
-[tool.pytest.ini_options]
-testpaths = [ "tests" ]
