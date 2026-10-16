@@ -8,6 +8,20 @@ version = "0.1.0"
 license = "GPL-3.0-or-later"
 license-files = ["LICENSE"]
 requires-python = ">=3.12, <3.13"
+dependencies = [
+    "catboost>=1.2.10",
+    "ipykernel>=7.4.0",
+    "kaggle>=2.2.4",
+    "lightgbm>=4.7.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "optuna>=5.0.0",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "scikit-learn-intelex>=2026.1.0",
+    "seaborn>=0.13.2",
+    "xgboost-cpu>=3.4.1",
+]
 
 [dependency-groups]
 dev = [
@@ -23,6 +37,8 @@ module-root = "src"
 [tool.ruff.lint]
 select = [ "ALL" ]
 ignore = [
+  "ANN001", # missing-type-function-argument
+  "CPY001", # missing-copyright-notice
   "COM812", # missing-trailing-comma
   "COM819", # prohibited-trailing-comma
   "D203",   # incorrect-blank-line-before-class
@@ -31,6 +47,7 @@ ignore = [
   "D208",   # over-indentation
   "D213",   # multi-line-summary-second-line
   "D300",   # triple-single-quotes
+  "N806",   # non-lowercase-variable-in-function
   "Q000",   # bad-quotes-inline-string
   "Q001",   # bad-quotes-multiline-string
   "Q002",   # bad-quotes-docstring
@@ -39,4 +56,19 @@ ignore = [
   "W191",   # tab-indentation
 ]
 [tool.ruff.lint.per-file-ignores]
-"**/__init__.py" = [ "D104" ]
+"**/*.py" = [
+  "PLR0913", # too-many-arguments
+  "PLR0917", # too-many-positional-arguments
+  "FBT001",  # boolean-type-hint-positional-argument
+  "FBT002",  # boolean-default-value-positional-argument
+]
+"**/*.ipynb" = [
+  "ANN201",  # missing-return-type-undocumented-public-function
+  "ANN202",  # missing-return-type-private-function
+  "D103",    # undocumented-public-function
+  "ERA001",  # commented-out-code
+  "F401",    # unused-import
+  "N803",    # invalid-argument-name
+  "T201",    # print
+  "PLR2004", # magic-value-comparison
+]
