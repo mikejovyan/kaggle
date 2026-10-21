@@ -48,7 +48,6 @@ Models ranked by test RMSLE (80/20 train-test split):
 
 ## Key findings
 
-- Gradient boosting models (LightGBM, CatBoost, XGBoost) dominated, all within 0.004 RMSLE of each other with default parameters
-- Tuning LightGBM over 100 Optuna trials improved RMSLE from 0.153 to 0.151, a modest but consistent gain
-- Train and test distributions were indistinguishable (adversarial balanced accuracy = 0.50), indicating no distribution shift
-- SVR matched boosting models in accuracy but at 643.9 seconds was by far the slowest baseline model
+- LightGBM, CatBoost, and XGBoost all landed within 0.004 RMSLE of each other by default — not much room to separate models on this dataset.
+- 100 rounds of tuning only moved LightGBM from 0.153 to 0.151 RMSLE, for 17 minutes of extra training time. Probably not worth repeating.
+- SVR matched the boosting models' accuracy but took over 10 minutes to train, versus LightGBM's 1.3 seconds.
