@@ -46,10 +46,7 @@ Models ranked by test balanced accuracy (80/20 train-test split):
 
 ## Key findings
 
-- Default XGBoost led the comparison at 0.961 balanced accuracy, with tuned LightGBM and default CatBoost close behind at 0.960
-- Tuning LightGBM with Optuna (20 trials) improved balanced accuracy only marginally (0.959 → 0.960) at a very large time cost (27.2s vs 2666.2s)
-- AdaBoost (0.657) and Logistic Regression (0.622) struggled significantly with the three-class imbalanced target
-- Decision Tree achieved a competitive 0.946 balanced accuracy despite being a single tree
-- Severe class imbalance (High: 3.3%) did not require resampling, as tree-based ensembles handled it well without it
-- Train and test distributions are indistinguishable (adversarial balanced accuracy = 0.50), indicating no distribution shift
-- A simplified feature set of 9 engineered threshold/one-hot flags (`Rainfall_lt_300`, `Soil_Moisture_lt_25`, `Temperature_gt_30`, `Wind_Speed_gt_10`, `Mulching_Used`, and one-hot `Crop_Growth_Stage` flags) achieved comparable or better balanced accuracy (0.962–0.964) to the full 19-feature pipeline, suggesting most of the predictive signal is captured by a handful of coarse thresholds
+- XGBoost, tuned LightGBM, and CatBoost all landed within 0.001 of each other (0.960–0.961 balanced accuracy) — no clear winner among the top models.
+- A single Decision Tree got surprisingly close to the boosted models (0.946). That suggests the classes split along a few simple rules rather than needing complex feature interactions.
+- AdaBoost (0.657) and Logistic Regression (0.622) both collapsed on the rare "High" class (3.3% of rows), dragging their balanced accuracy well below the tree-based models.
+- A side experiment with just 9 engineered threshold flags (see `notebook-explore.ipynb`) matched or beat the full 19-feature model (0.962–0.964 vs 0.959–0.961). Most of the signal here comes from a handful of coarse cutoffs, not the raw sensor readings.
