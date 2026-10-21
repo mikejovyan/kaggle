@@ -46,8 +46,6 @@ Models ranked by test ROC AUC (80/20 train-test split):
 
 ## Key findings
 
-- Gradient boosting algorithms (XGBoost, CatBoost, LightGBM) dominated, all clustering tightly at 0.958–0.959 ROC AUC
-- Tuning XGBoost with Optuna (30 trials) improved ROC AUC only marginally (0.958 → 0.959) at a very large time cost (9.4s vs 1807.1s)
-- Random Forest was competitive with the boosting models (0.955) despite no tuning
-- Train and test distributions are indistinguishable (adversarial balanced accuracy = 0.50), indicating no distribution shift
-- Missing `Arrival Delay in Minutes` values were imputed with the column median before training
+- XGBoost, CatBoost, and LightGBM all converged tightly (0.958–0.959 ROC AUC) — any of the three would do about as well.
+- Random Forest nearly matched the boosted models (0.955) with zero tuning, which isn't typical. The signal here seems easy enough that model choice barely matters once you're using trees.
+- 30 minutes of tuning XGBoost only moved ROC AUC from 0.958 to 0.959 — not worth repeating.
