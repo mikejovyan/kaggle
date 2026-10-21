@@ -45,10 +45,6 @@ Models ranked by test RMSE (80/20 train-test split):
 
 ## Key findings
 
-- All models except Decision Tree clustered within 0.2 RMSE of each other (38.9–39.1), suggesting the features carry very little signal for predicting price
-- R² was near zero across all models (~0.0–0.002), indicating that brand, material, size, and physical attributes barely explain price variance — the target appears largely random given these inputs
-- Tuning Gradient Boosting with Optuna (15 trials) improved RMSE from 38.918 to 38.914, a negligible gain at a substantial time cost (90s vs 3477s)
-- Ridge matched the boosting models closely (38.922), consistent with the absence of useful non-linear structure
-- Missing values were widespread across 7 of 9 features, with categorical columns losing up to 9,950 entries (~3.3% of training rows)
-- Train and test distributions are indistinguishable (adversarial balanced accuracy = 0.50), indicating no distribution shift
-- `training_extra.csv` is present in the data directory but unused by this notebook — only `train.csv` was used for training
+- Every model scored almost the same (RMSE 38.9–39.1, R² near zero) regardless of approach, from Ridge to boosted trees. Brand, material, size, and the other backpack attributes barely relate to price at all — this looks like one of the "no real signal" Playground datasets.
+- Tuning Gradient Boosting for an hour (3,477s) gained almost nothing over the 90-second default run.
+- `training_extra.csv` sits in the data folder but isn't used by this notebook — only `train.csv` was loaded.
