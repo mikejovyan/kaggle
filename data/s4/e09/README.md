@@ -48,10 +48,6 @@ Models ranked by test RMSE (80/20 train-test split):
 
 ## Key findings
 
-- LightGBM (tuned) led the comparison; tuning with Optuna (50 trials) improved RMSE from 68,175 to 67,824, a modest gain at a large time cost (3.6s vs 792.1s)
-- Gradient Boosting was competitive with default parameters (68,033 RMSE) despite no tuning
-- The raw `engine` field was parsed with regex to extract five structured features: `cylinders`, `displacement`, `horsepower`, `turbo` count, and `transmission_speed`; `transmission` text was also normalized into coarse categories (`AT`, `MT`, `CVT`, `DCT`, `Unknown`)
-- Free-text `ext_col`/`int_col` values (hundreds of distinct strings) were mapped down to a small set of main colors via a manually curated lookup table
-- High-cardinality `brand` (57 values) and `model` (1,897 values) features were encoded with target encoding
-- R² remained low across all models (0.11–0.17), indicating substantial unexplained variance in price, likely driven by rare, extremely expensive listings in the long-tailed target distribution
-- Train and test distributions were indistinguishable (adversarial balanced accuracy = 0.50), indicating no distribution shift
+- This one needed far more manual feature engineering than most episodes: the free-text `engine` field had to be regex-parsed into cylinders/displacement/horsepower/turbo, and the hundreds of raw color strings needed a hand-built lookup table to map down to a dozen main colors.
+- Despite all that cleanup, R² stayed low (0.11–0.17) for every model — most of the price variance still isn't explained by these features, likely because a handful of extremely expensive listings skew the long-tailed target.
+- 50 rounds of tuning only moved LightGBM from 68,175 to 67,824 RMSE, for 13 extra minutes of training — the manual feature engineering mattered more than tuning here.
