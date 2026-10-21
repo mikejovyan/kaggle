@@ -41,8 +41,6 @@ Models ranked by test R² (80/20 train-test split):
 
 ## Key findings
 
-- CatBoost, LightGBM, and XGBoost all converged to R² = 0.867 with default parameters, leaving little room for tuning gains; the tuned CatBoost matched the default on the local test set despite a 10x longer training time (1506.4s vs 155.5s)
-- Two features were engineered: `SumOfFeatures` (row-wise sum of all inputs, useful for tree models) and `IsSumBetween72And75` (binary flag for a specific sum range, useful for linear models)
-- Train and test distributions were indistinguishable (adversarial balanced accuracy = 0.50), indicating no distribution shift
-- The target range is narrow (0.285–0.725), which likely constrains the ceiling on R²
-- Ridge (0.851) trailed the boosting models by only 0.016 R², suggesting the engineered `IsSumBetween72And75` feature captured most of the non-linear structure needed for a linear model
+- Every model, even Ridge, converged to roughly the same R² (0.85–0.87). The engineered `SumOfFeatures` column (just the row-wise sum of all inputs) seems to explain almost all of it — a strong hint this dataset was generated as a function of that sum rather than real flood dynamics.
+- Tuning CatBoost for 25 extra minutes didn't improve on the default at all (both 0.867 R²) — not worth repeating here.
+- The target only ranges from 0.285 to 0.725, which caps how high R² can realistically go no matter the model.

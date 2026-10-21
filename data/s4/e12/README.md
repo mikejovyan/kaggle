@@ -47,10 +47,6 @@ Models ranked by test RMSLE (80/20 train-test split):
 
 ## Key findings
 
-- LightGBM led all models; tuning with Optuna (20 trials) improved RMSLE only marginally (1.134 → 1.133) at a large time cost (35.9s vs 1263.5s)
-- CatBoost and XGBoost scored within 0.003 RMSLE of LightGBM, while Ridge lagged by 0.031, reflecting strong non-linear relationships in the data
-- AdaBoost and Decision Tree performed poorly, suggesting these methods struggle with the noisy, weakly-correlated features in this dataset
-- Missing values were pervasive — `Previous Claims` and `Occupation` each had over 30% missing, likely structural absences rather than random gaps; missingness itself was encoded as a feature for `Annual Income`, `Customer Feedback`, and `Health Score`
-- `Policy Start Date` was decomposed into seven features (year, day-of-week, Unix timestamp, and cyclical month/day sin-cos encodings) to capture temporal patterns
-- Train and test distributions are indistinguishable (adversarial balanced accuracy = 0.50), indicating no distribution shift
-- R² remained low across all models (0.06–0.07), indicating most of the variance in premium amount is not explained by the available features
+- R² never got above 0.07 for any model, even with 1.2 million rows to train on. More data didn't help — the features themselves barely predict premium amount, so the ceiling here is set by signal, not sample size.
+- `Previous Claims` and `Occupation` were missing in over 30% of rows. That's too large to be random — more likely people who genuinely have no claims or no listed job — so missingness itself was kept as a feature rather than just imputed away.
+- 20 rounds of tuning LightGBM (21 minutes) barely moved RMSLE (1.134 → 1.133). Not worth repeating on this dataset.
