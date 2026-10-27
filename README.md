@@ -21,6 +21,7 @@ Model: ADA = AdaBoost, CB = CatBoost, GB = Gradient Boosting, LGBM = LightGBM, R
 | [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | [Regression with an Abalone Dataset](data/s4/e04/) | R | RMSLE ↓ | LGBM | 0.14701 | 0.14374 |
 | [s4e5](https://www.kaggle.com/competitions/playground-series-s4e5) | [Regression with a Flood Prediction Dataset](data/s4/e05/) | R | R² | CB | 0.86686 | 0.86905 |
 | [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | [Regression of Used Car Prices](data/s4/e09/) | R | RMSE ↓ | LGBM | 63,311 | 62,917 |
+| [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](data/s4/e10/) | C | ROC AUC | LGBM | 0.96038 | 0.96938 |
 | [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | [Regression with an Insurance Dataset](data/s4/e12/) | R | RMSLE ↓ | LGBM | 1.13226 | 1.01706 |
 | [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | [Backpack Prediction Challenge](data/s5/e02/) | R | RMSE ↓ | GB | 38.92943 | 38.61628 |
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](data/s5/e03/) | C | ROC AUC | ADA | 0.90235 | 0.90654 |
