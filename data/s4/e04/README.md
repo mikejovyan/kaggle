@@ -48,6 +48,5 @@ Models ranked by test RMSLE (80/20 train-test split):
 
 ## Key findings
 
-- LightGBM, CatBoost, and XGBoost all landed within 0.004 RMSLE of each other by default — not much room to separate models on this dataset.
+- The actual way to find an abalone's age is to cut the shell open and count the rings under a microscope — slow and destructive. That's the whole point of this dataset: predicting age from easy-to-measure physical dimensions instead.
 - 100 rounds of tuning only moved LightGBM from 0.153 to 0.151 RMSLE, for 17 minutes of extra training time. Probably not worth repeating.
-- SVR matched the boosting models' accuracy but took over 10 minutes to train, versus LightGBM's 1.3 seconds.
