@@ -49,4 +49,3 @@ Models ranked by test ROC AUC (80/20 train-test split):
 
 - Tuning actually paid off here: 50 Optuna trials (about 10 minutes) took LightGBM from 0.862 to 0.870 ROC AUC. That's a bigger gain than most episodes see from tuning — worth doing again if this one comes back.
 - A single Decision Tree fell off a cliff (0.689), a much wider gap from the ensemble models (0.85+) than usual. This dataset needs the averaging/boosting, not just one tree.
-- Clean dataset — no missing values across 159k rows, so the time went into modeling rather than cleanup.
