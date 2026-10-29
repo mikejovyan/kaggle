@@ -28,5 +28,6 @@ Model: ADA = AdaBoost, CB = CatBoost, GB = Gradient Boosting, LGBM = LightGBM, R
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](data/s5/e03/) | C | ROC AUC | ADA | 0.90235 | 0.90654 |
 | [s5e7](https://www.kaggle.com/competitions/playground-series-s5e7) | [Predict the Introverts from the Extroverts](data/s5/e07/) | C | Accuracy | RF | 0.968825 | 0.970647 |
 | [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | [Binary Classification with a Bank Dataset](data/s5/e08/) | C | ROC AUC | LGBM | 0.96965 | 0.97801 |
+| [s5e12](https://www.kaggle.com/competitions/playground-series-s5e12) | [Diabetes Prediction Challenge](data/s5/e12/) | C | ROC AUC | LGBM | 0.69444 | 0.70504 |
 | [s6e4](https://www.kaggle.com/competitions/playground-series-s6e4) | [Predicting Irrigation Need](data/s6/e04/) | C | Bal. Acc | LGBM | 0.96237 | 0.98158 |
 | [s6e10](https://www.kaggle.com/competitions/playground-series-s6e10) | [Predicting Airline Satisfaction](data/s6/e10/) | C | ROC AUC | XGB | TBD | TBD |
