@@ -17,18 +17,28 @@ Score: both are private scores as evaluated on Kaggle — My Top is my best subm
 | Episode | Title | Task | Metric | Model | My Top | LB Top |
 |---------|-------|------|--------|-------|----------|--------|
 | [s3e1](https://www.kaggle.com/competitions/playground-series-s3e1) | [Regression with a Tabular California Housing Dataset](data/s3/e01/) |  |  |  |  |  |
+| [s3e2](https://www.kaggle.com/competitions/playground-series-s3e2) | [Binary Classification with a Tabular Stroke Prediction Dataset](data/s3/e02/) |  |  |  |  |  |
 | [s3e3](https://www.kaggle.com/competitions/playground-series-s3e3) | [Binary Classification with a Tabular Employee Attrition Dataset](data/s3/e03/) |  |  |  |  |  |
+| [s3e4](https://www.kaggle.com/competitions/playground-series-s3e4) | [Binary Classification with a Tabular Credit Card Fraud Dataset](data/s3/e04/) |  |  |  |  |  |
 | [s3e5](https://www.kaggle.com/competitions/playground-series-s3e5) | [Ordinal Regression with a Tabular Wine Quality Dataset](data/s3/e05/) |  |  |  |  |  |
+| [s3e6](https://www.kaggle.com/competitions/playground-series-s3e6) | [Regression with a Tabular Paris Housing Price Dataset](data/s3/e06/) |  |  |  |  |  |
 | [s3e7](https://www.kaggle.com/competitions/playground-series-s3e7) | [Binary Classification with a Tabular Reservation Cancellation Dataset](data/s3/e07/) |  |  |  |  |  |
+| [s3e8](https://www.kaggle.com/competitions/playground-series-s3e8) | [Regression with a Tabular Gemstone Price Dataset](data/s3/e08/) |  |  |  |  |  |
 | [s3e9](https://www.kaggle.com/competitions/playground-series-s3e9) | [Regression with a Tabular Concrete Strength Dataset](data/s3/e09/) |  |  |  |  |  |
+| [s3e10](https://www.kaggle.com/competitions/playground-series-s3e10) | [Binary Classification with a Tabular Pulsar Dataset](data/s3/e10/) |  |  |  |  |  |
 | [s3e11](https://www.kaggle.com/competitions/playground-series-s3e11) | [Regression with a Tabular Media Campaign Cost Dataset](data/s3/e11/) |  |  |  |  |  |
+| [s3e12](https://www.kaggle.com/competitions/playground-series-s3e12) | [Binary Classification with a Tabular Kidney Stone Prediction Dataset](data/s3/e12/) |  |  |  |  |  |
 | [s3e13](https://www.kaggle.com/competitions/playground-series-s3e13) | [Classification with a Tabular Vector Borne Disease Dataset](data/s3/e13/) |  |  |  |  |  |
 | [s3e14](https://www.kaggle.com/competitions/playground-series-s3e14) | [Regression with a Wild Blueberry Yield Dataset](data/s3/e14/) |  |  |  |  |  |
 | [s3e15](https://www.kaggle.com/competitions/playground-series-s3e15) | [Feature Imputation with a Heat Flux Dataset](data/s3/e15/) |  |  |  |  |  |
 | [s3e16](https://www.kaggle.com/competitions/playground-series-s3e16) | [Regression with a Crab Age Dataset](data/s3/e16/) |  |  |  |  |  |
+| [s3e17](https://www.kaggle.com/competitions/playground-series-s3e17) | [Binary Classification of Machine Failures](data/s3/e17/) |  |  |  |  |  |
+| [s3e18](https://www.kaggle.com/competitions/playground-series-s3e18) | [Explore Multi-Label Classification with an Enzyme Substrate Dataset](data/s3/e18/) |  |  |  |  |  |
 | [s3e19](https://www.kaggle.com/competitions/playground-series-s3e19) | [Forecasting Mini-Course Sales](data/s3/e19/) |  |  |  |  |  |
+| [s3e20](https://www.kaggle.com/competitions/playground-series-s3e20) | [Predict CO2 Emissions in Rwanda](data/s3/e20/) |  |  |  |  |  |
 | [s3e21](https://www.kaggle.com/competitions/playground-series-s3e21) | [Improve a Fixed Model the Data-Centric Way!](data/s3/e21/) |  |  |  |  |  |
 | [s3e22](https://www.kaggle.com/competitions/playground-series-s3e22) | [Predict Health Outcomes of Horses](data/s3/e22/) | C | Acc. | LGBM | 0.73787 | 0.78181 |
+| [s3e23](https://www.kaggle.com/competitions/playground-series-s3e23) | [Binary Classification with a Software Defects Dataset](data/s3/e23/) |  |  |  |  |  |
 | [s3e24](https://www.kaggle.com/competitions/playground-series-s3e24) | [Binary Prediction of Smoker Status using Bio-Signals](data/s3/e24/) | C | ROC AUC | LGBM | 0.87111 | 0.87946 |
 | [s3e25](https://www.kaggle.com/competitions/playground-series-s3e25) | [Regression with a Mohs Hardness Dataset](data/s3/e25/) |  |  |  |  |  |
 | [s3e26](https://www.kaggle.com/competitions/playground-series-s3e26) | [Multi-Class Prediction of Cirrhosis Outcomes](data/s3/e26/) |  |  |  |  |  |
