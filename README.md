@@ -52,7 +52,7 @@ Score: both are private scores as evaluated on Kaggle — My Top is my best subm
 | [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](data/s4/e08/) |  |  |  |  |  |
 | [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | [Regression of Used Car Prices](data/s4/e09/) | R | RMSE ↓ | LGBM | 63,311 | 62,917 |
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](data/s4/e10/) | C | ROC AUC | LGBM | 0.96038 | 0.96938 |
-| [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](data/s4/e11/) |  |  |  |  |  |
+| [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](data/s4/e11/) | C | Acc. | CB | 0.94052 | 0.94184 |
 | [s4e12](https://www.kaggle.com/competitions/playground-series-s4e12) | [Regression with an Insurance Dataset](data/s4/e12/) | R | RMSLE ↓ | LGBM | 1.13226 | 1.01706 |
 | [s5e1](https://www.kaggle.com/competitions/playground-series-s5e1) | [Forecasting Sticker Sales](data/s5/e01/) |  |  |  |  |  |
 | [s5e2](https://www.kaggle.com/competitions/playground-series-s5e2) | [Backpack Prediction Challenge](data/s5/e02/) | R | RMSE ↓ | GB | 38.92943 | 38.61628 |
