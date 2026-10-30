@@ -46,6 +46,5 @@ Models ranked by test ROC AUC (80/20 train-test split):
 
 ## Key findings
 
-- XGBoost, CatBoost, and LightGBM all converged tightly (0.958–0.959 ROC AUC) — any of the three would do about as well.
-- Random Forest nearly matched the boosted models (0.955) with zero tuning, which isn't typical. The signal here seems easy enough that model choice barely matters once you're using trees.
+- Random Forest nearly matched the tuned boosting models (0.955 vs 0.958–0.959) with zero tuning, which isn't typical — the signal here seems easy enough that model choice barely matters once you're using trees.
 - 30 minutes of tuning XGBoost only moved ROC AUC from 0.958 to 0.959 — not worth repeating.
