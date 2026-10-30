@@ -50,4 +50,4 @@ Models ranked by test accuracy (equivalent to micro-averaged F1 for this single-
 ## Key findings
 
 - Only 1,235 rows total, so the test split is ~247 rows. The untuned Gradient Boosting model scoring higher than the tuned LightGBM (0.733 vs 0.725) is most likely noise, not a real difference.
-- Feels like real veterinary data rather than synthetic. Several columns needed manual cleanup of messy categories (`pain`, `peristalsis`, `capillary_refill_time`, `nasogastric_reflux`), and `lesion_2`/`lesion_3` were dropped since almost every row had the same value.
+- Several columns needed manual cleanup of messy categories (`pain`, `peristalsis`, `capillary_refill_time`, `nasogastric_reflux`), and `lesion_2`/`lesion_3` were dropped since almost every row had the same value.
