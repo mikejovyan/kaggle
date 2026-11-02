@@ -26,7 +26,6 @@ def barplot(
     hue: str | None = None,
     ax: Axes | None = None,
     figsize: ArrayLike | None = (12, 5),
-    rotation: int | None = None,
 ) -> Axes:
     """Draw a bar plot, creating a new figure if no axes is given.
 
@@ -37,7 +36,6 @@ def barplot(
         hue: Column name to color bars by.
         ax: Axes to draw on. A new figure is created if omitted.
         figsize: Size of the new figure, used only when `ax` is omitted.
-        rotation: Degrees to rotate x-axis tick labels by.
 
     Returns:
         The axes the plot was drawn on.
@@ -53,8 +51,6 @@ def barplot(
         hue=hue,
         ax=ax,
     )
-    if rotation is not None:
-        ax.tick_params(axis="x", rotation=rotation)
     return ax
 
 
@@ -284,7 +280,6 @@ def lineplot(
     hue: str | None = None,
     ax: Axes | None = None,
     figsize: ArrayLike | None = (5, 4),
-    rotation: int | None = None,
 ) -> Axes:
     """Draw a line plot.
 
@@ -295,7 +290,6 @@ def lineplot(
         hue: Column name to color lines by.
         ax: Axes to draw on. A new figure is created if omitted.
         figsize: Size of the new figure, used only when `ax` is omitted.
-        rotation: Degrees to rotate x-axis tick labels by.
 
     Returns:
         The axes the plot was drawn on.
@@ -311,8 +305,6 @@ def lineplot(
         hue=hue,
         ax=ax,
     )
-    if rotation is not None:
-        ax.tick_params(axis="x", rotation=rotation)
     return ax
 
 
