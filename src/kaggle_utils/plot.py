@@ -151,16 +151,19 @@ def histplot(
     ax: Axes | None = None,
     figsize: ArrayLike | None = (5, 4),
     discrete: bool = False,
+    multiple: str = "layer",
 ) -> Axes:
     """Draw a histogram, overlaying one per `hue` group if given.
 
     Args:
         data: Dataframe to plot from.
         x: Column name, or array-like of values, to bin.
-        hue: Column name to split into overlaid, labeled histograms by.
+        hue: Column name to split into labeled histograms by.
         ax: Axes to draw on. A new figure is created if omitted.
         figsize: Size of the new figure, used only when `ax` is omitted.
         discrete: Whether to treat each unique value as its own bin.
+        multiple: How to draw overlapping `hue` groups, e.g. "layer",
+            "dodge", "stack".
 
     Returns:
         The axes the plot was drawn on.
@@ -169,23 +172,14 @@ def histplot(
     if ax is None:
         _, ax = plt.subplots(figsize=figsize)
 
-    if hue is not None and data is not None and isinstance(x, str):
-        for group in data[hue].unique():
-            sns.histplot(
-                data=data.loc[data[hue] == group],
-                x=x,
-                label=group,
-                discrete=discrete,
-                ax=ax,
-            )
-        ax.legend(title=hue)
-    else:
-        sns.histplot(
-            data=data,
-            x=x,
-            discrete=discrete,
-            ax=ax,
-        )
+    sns.histplot(
+        data=data,
+        x=x,
+        hue=hue,
+        discrete=discrete,
+        multiple=multiple,
+        ax=ax,
+    )
 
     ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f"{x:,.0f}"))
     return ax
@@ -309,7 +303,10 @@ def lineplot(
 
 
 def subplots(
-    groups: Sequence[tuple[list[str], Callable[..., Axes]]],
+    groups: Sequence[
+        tuple[list[str], Callable[..., Axes]]
+        | tuple[list[str], Callable[..., Axes], dict]
+    ],
     ncols: int = 2,
     figsize: ArrayLike | None = None,
     **kwargs: DataFrame | str | None,
@@ -317,10 +314,12 @@ def subplots(
     """Lay out one plot per feature across a grid of subplots.
 
     Each group's features share that group's plotting function, called
-    once per feature as `plot_fn(x=feature, ax=ax, **kwargs)`.
+    once per feature as `plot_fn(x=feature, ax=ax, **kwargs, **extra)`.
 
     Args:
-        groups: Pairs of (feature names, plotting function) to lay out.
+        groups: Each group is (feature names, plotting function) or
+            (feature names, plotting function, extra kwargs for that
+            function only, taking precedence over `**kwargs`).
         ncols: Number of columns in the grid.
         figsize: Size of the figure. Defaults to a size scaled to the
             number of rows and columns.
@@ -331,15 +330,20 @@ def subplots(
         The figure and its grid of axes, with unused axes hidden.
 
     """
-    pairs = [(feature, plot_fn) for features, plot_fn in groups for feature in features]
+    pairs = [
+        (feature, plot_fn, extra)
+        for features, plot_fn, *maybe_extra in groups
+        for extra in [maybe_extra[0] if maybe_extra else {}]
+        for feature in features
+    ]
     nrows = int(np.ceil(len(pairs) / ncols))
     if figsize is None:
         figsize = (6 * ncols, 4 * nrows)
     fig, axes = plt.subplots(nrows, ncols, figsize=figsize, squeeze=False)
 
-    for i, (feature, plot_fn) in enumerate(pairs):
+    for i, (feature, plot_fn, extra) in enumerate(pairs):
         ax = axes[i // ncols, i % ncols]
-        plot_fn(x=feature, ax=ax, **kwargs)
+        plot_fn(x=feature, ax=ax, **{**kwargs, **extra})
 
     for i in range(len(pairs), nrows * ncols):
         axes[i // ncols, i % ncols].set_visible(False)
