@@ -49,4 +49,4 @@ Models ranked by test balanced accuracy (80/20 train-test split):
 - XGBoost, tuned LightGBM, and CatBoost all landed within 0.001 of each other (0.960–0.961 balanced accuracy) — no clear winner among the top models.
 - A single Decision Tree got surprisingly close to the boosted models (0.946). That suggests the classes split along a few simple rules rather than needing complex feature interactions.
 - AdaBoost (0.657) and Logistic Regression (0.622) both collapsed on the rare "High" class (3.3% of rows), dragging their balanced accuracy well below the tree-based models.
-- A side experiment with just 9 engineered threshold flags (see `notebook-explore.ipynb`) matched or beat the full 19-feature model (0.962–0.964 vs 0.959–0.961). Most of the signal here comes from a handful of coarse cutoffs, not the raw sensor readings.
+- A side experiment with just 9 engineered threshold flags (see `notebook_explore.ipynb`) matched or beat the full 19-feature model (0.962–0.964 vs 0.959–0.961). Most of the signal here comes from a handful of coarse cutoffs, not the raw sensor readings.
