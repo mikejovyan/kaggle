@@ -192,6 +192,7 @@ def kdeplot(
     ax: Axes | None = None,
     figsize: ArrayLike | None = (5, 4),
     fill: bool = True,
+    clip: tuple[float, float] | None = None,
 ) -> Axes:
     """Draw a kernel density estimate plot.
 
@@ -202,6 +203,7 @@ def kdeplot(
         ax: Axes to draw on. A new figure is created if omitted.
         figsize: Size of the new figure, used only when `ax` is omitted.
         fill: Whether to fill the area under each density curve.
+        clip: Range to restrict the density estimate to, e.g. (0, 1).
 
     Returns:
         The axes the plot was drawn on.
@@ -215,6 +217,7 @@ def kdeplot(
         x=x,
         hue=hue,
         fill=fill,
+        clip=clip,
         ax=ax,
     )
     return ax
