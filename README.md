@@ -64,7 +64,7 @@ Score: both are private scores as evaluated on Kaggle — My Top is my best subm
 | [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | [Binary Classification with a Bank Dataset](data/s5/e08/) | C | ROC AUC | LGBM | 0.96965 | 0.97801 |
 | [s5e9](https://www.kaggle.com/competitions/playground-series-s5e9) | [Predicting the Beats-per-Minute of Songs](data/s5/e09/) |  |  |  |  |  |
 | [s5e10](https://www.kaggle.com/competitions/playground-series-s5e10) | [Predicting Road Accident Risk](data/s5/e10/) |  |  |  |  |  |
-| [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | [Predicting Loan Payback](data/s5/e11/) |  |  |  |  |  |
+| [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | [Predicting Loan Payback](data/s5/e11/) | C | ROC AUC | XGB | 0.92465 | 0.92939 |
 | [s5e12](https://www.kaggle.com/competitions/playground-series-s5e12) | [Diabetes Prediction Challenge](data/s5/e12/) | C | ROC AUC | LGBM | 0.69444 | 0.70504 |
 | [s6e1](https://www.kaggle.com/competitions/playground-series-s6e1) | [Predicting Student Test Scores](data/s6/e01/) |  |  |  |  |  |
 | [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](data/s6/e02/) |  |  |  |  |  |
