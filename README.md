@@ -42,7 +42,7 @@ Score: both are private scores as evaluated on Kaggle — My Top is my best subm
 | [s3e24](https://www.kaggle.com/competitions/playground-series-s3e24) | [Binary Prediction of Smoker Status using Bio-Signals](data/s3/e24/) | C | ROC AUC | LGBM | 0.87111 | 0.87946 |
 | [s3e25](https://www.kaggle.com/competitions/playground-series-s3e25) | [Regression with a Mohs Hardness Dataset](data/s3/e25/) |  |  |  |  |  |
 | [s3e26](https://www.kaggle.com/competitions/playground-series-s3e26) | [Multi-Class Prediction of Cirrhosis Outcomes](data/s3/e26/) | C | Log loss ↓ | XGB | 0.41623 | 0.39104 |
-| [s4e1](https://www.kaggle.com/competitions/playground-series-s4e1) | [Binary Classification with a Bank Churn Dataset](data/s4/e01/) |  |  |  |  |  |
+| [s4e1](https://www.kaggle.com/competitions/playground-series-s4e1) | [Binary Classification with a Bank Churn Dataset](data/s4/e01/) | C | ROC AUC | LGBM | 0.89272 | 0.90585 |
 | [s4e2](https://www.kaggle.com/competitions/playground-series-s4e2) | [Multi-Class Prediction of Obesity Risk](data/s4/e02/) | C | Acc. | LGBM | 0.90570 | 0.91157 |
 | [s4e3](https://www.kaggle.com/competitions/playground-series-s4e3) | [Steel Plate Defect Prediction](data/s4/e03/) | C | ROC AUC | XGB | 0.88638 | 0.88977 |
 | [s4e4](https://www.kaggle.com/competitions/playground-series-s4e4) | [Regression with an Abalone Dataset](data/s4/e04/) | R | RMSLE ↓ | LGBM | 0.14701 | 0.14374 |
