@@ -49,7 +49,7 @@ Score: both are private scores as evaluated on Kaggle — My Top is my best subm
 | [s4e5](https://www.kaggle.com/competitions/playground-series-s4e5) | [Regression with a Flood Prediction Dataset](data/s4/e05/) | R | R² | CB | 0.86686 | 0.86905 |
 | [s4e6](https://www.kaggle.com/competitions/playground-series-s4e6) | [Classification with an Academic Success Dataset](data/s4/e06/) | C | Acc. | XGB | 0.83766 | 0.84035 |
 | [s4e7](https://www.kaggle.com/competitions/playground-series-s4e7) | [Binary Classification of Insurance Cross Selling](data/s4/e07/) |  |  |  |  |  |
-| [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](data/s4/e08/) |  |  |  |  |  |
+| [s4e8](https://www.kaggle.com/competitions/playground-series-s4e8) | [Binary Prediction of Poisonous Mushrooms](data/s4/e08/) | C | MCC | XGB | 0.98466 | 0.98514 |
 | [s4e9](https://www.kaggle.com/competitions/playground-series-s4e9) | [Regression of Used Car Prices](data/s4/e09/) | R | RMSE ↓ | LGBM | 63,311 | 62,917 |
 | [s4e10](https://www.kaggle.com/competitions/playground-series-s4e10) | [Loan Approval Prediction](data/s4/e10/) | C | ROC AUC | LGBM | 0.96038 | 0.96938 |
 | [s4e11](https://www.kaggle.com/competitions/playground-series-s4e11) | [Exploring Mental Health Data](data/s4/e11/) | C | Acc. | CB | 0.94052 | 0.94184 |
