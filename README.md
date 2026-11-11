@@ -75,4 +75,4 @@ Score: both are private scores as evaluated on Kaggle — My Top is my best subm
 | [s6e7](https://www.kaggle.com/competitions/playground-series-s6e7) | [Predicting Student Health Risk](data/s6/e07/) |  |  |  |  |  |
 | [s6e8](https://www.kaggle.com/competitions/playground-series-s6e8) | [Predicting Smartphone Addiction](data/s6/e08/) |  |  |  |  |  |
 | [s6e9](https://www.kaggle.com/competitions/playground-series-s6e9) | [Predicting Electric Vehicle Purchases](data/s6/e09/) |  |  |  |  |  |
-| [s6e10](https://www.kaggle.com/competitions/playground-series-s6e10) | [Predicting Airline Satisfaction](data/s6/e10/) | C | ROC AUC | XGB |  |  |
+| [s6e10](https://www.kaggle.com/competitions/playground-series-s6e10) | [Predicting Airline Satisfaction](data/s6/e10/) | C | ROC AUC | XGB | 0.95939 | 0.96318 |
