@@ -59,7 +59,7 @@ Score: both are private scores as evaluated on Kaggle — My Top is my best subm
 | [s5e3](https://www.kaggle.com/competitions/playground-series-s5e3) | [Binary Prediction with a Rainfall Dataset](data/s5/e03/) | C | ROC AUC | ADA | 0.90235 | 0.90654 |
 | [s5e4](https://www.kaggle.com/competitions/playground-series-s5e4) | [Predict Podcast Listening Time](data/s5/e04/) |  |  |  |  |  |
 | [s5e5](https://www.kaggle.com/competitions/playground-series-s5e5) | [Predict Calorie Expenditure](data/s5/e05/) |  |  |  |  |  |
-| [s5e6](https://www.kaggle.com/competitions/playground-series-s5e6) | [Predicting Optimal Fertilizers](data/s5/e06/) |  |  |  |  |  |
+| [s5e6](https://www.kaggle.com/competitions/playground-series-s5e6) | [Predicting Optimal Fertilizers](data/s5/e06/) | C | MAP@3 | XGB | 0.34638 | 0.38652 |
 | [s5e7](https://www.kaggle.com/competitions/playground-series-s5e7) | [Predict the Introverts from the Extroverts](data/s5/e07/) | C | Acc. | RF | 0.968825 | 0.970647 |
 | [s5e8](https://www.kaggle.com/competitions/playground-series-s5e8) | [Binary Classification with a Bank Dataset](data/s5/e08/) | C | ROC AUC | LGBM | 0.96965 | 0.97801 |
 | [s5e9](https://www.kaggle.com/competitions/playground-series-s5e9) | [Predicting the Beats-per-Minute of Songs](data/s5/e09/) |  |  |  |  |  |
