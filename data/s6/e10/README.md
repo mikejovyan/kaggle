@@ -19,7 +19,7 @@ kaggle competitions download -c playground-series-s6e10
 
 ## Results
 
-The Kaggle submission achieved a private score of `TBD`, compared to the [leaderboard](https://www.kaggle.com/competitions/playground-series-s6e10/leaderboard) top score of `TBD`.
+The Kaggle submission achieved a private score of `0.95939`, compared to the [leaderboard](https://www.kaggle.com/competitions/playground-series-s6e10/leaderboard) top score of `0.96318`.
 
 Models ranked by test ROC AUC (80/20 train-test split):
 
