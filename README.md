@@ -67,7 +67,7 @@ Score: both are private scores as evaluated on Kaggle — My Top is my best subm
 | [s5e11](https://www.kaggle.com/competitions/playground-series-s5e11) | [Predicting Loan Payback](data/s5/e11/) | C | ROC AUC | XGB | 0.92465 | 0.92939 |
 | [s5e12](https://www.kaggle.com/competitions/playground-series-s5e12) | [Diabetes Prediction Challenge](data/s5/e12/) | C | ROC AUC | LGBM | 0.69444 | 0.70504 |
 | [s6e1](https://www.kaggle.com/competitions/playground-series-s6e1) | [Predicting Student Test Scores](data/s6/e01/) |  |  |  |  |  |
-| [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](data/s6/e02/) |  |  |  |  |  |
+| [s6e2](https://www.kaggle.com/competitions/playground-series-s6e2) | [Predicting Heart Disease](data/s6/e02/) | C | ROC AUC | CB | 0.95514 | 0.95535 |
 | [s6e3](https://www.kaggle.com/competitions/playground-series-s6e3) | [Predict Customer Churn](data/s6/e03/) | C | ROC AUC | XGB | 0.91484 | 0.91856 |
 | [s6e4](https://www.kaggle.com/competitions/playground-series-s6e4) | [Predicting Irrigation Need](data/s6/e04/) | C | Bal. Acc | LGBM | 0.96237 | 0.98158 |
 | [s6e5](https://www.kaggle.com/competitions/playground-series-s6e5) | [Predicting F1 Pit Stops](data/s6/e05/) |  |  |  |  |  |
